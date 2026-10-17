@@ -114,3 +114,22 @@ AVAILABILITY = {
     "resolved_at":             (AFTER, "Resolution time, end of the target.", "End of the target, never a feature."),
     "closed_at":               (AFTER, "Closure time, after the resolution.", "Excluded (leakage). Possible second target."),
 }
+
+# ---------------------------------------------------------------- incident table (notebook 03)
+INCIDENT_FILE = DATA_PROCESSED_DIR / "incident_table.csv"
+NO_TARGET_FILE = DATA_INTERIM_DIR / "incidents_without_target.csv"
+
+TARGET = "resolution_hours"   # last resolution time - opened_at, in hours
+
+# Features: value on the first logged event of the incident (no back-fill).
+# cmdb_ci is left out (99.7% missing), sys_created_at is left out (close to opened_at).
+INITIAL_COLS = [
+    "caller_id", "opened_by", "sys_created_by", "contact_type", "location",
+    "category", "subcategory", "u_symptom", "impact", "urgency", "priority",
+    "assignment_group", "notify",
+]
+
+# Kept in the table to study the data, never to train the main model.
+ANALYSIS_ONLY_COLS = [
+    "target_source", "first_event_state", "n_events", "reassignment_count", "reopen_count", "closed_at",
+]
