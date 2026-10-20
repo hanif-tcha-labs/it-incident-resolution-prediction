@@ -133,3 +133,15 @@ INITIAL_COLS = [
 ANALYSIS_ONLY_COLS = [
     "target_source", "first_event_state", "n_events", "reassignment_count", "reopen_count", "closed_at",
 ]
+
+# ---------------------------------------------------------------- features and split (notebook 05)
+# Categorical features known at opening. Missing values become their own level.
+FEATURES = [
+    "priority", "impact", "urgency", "category", "subcategory", "u_symptom", "assignment_group",
+    "location", "contact_type", "opened_by", "sys_created_by", "hour", "weekday",
+]
+MIN_FREQUENCY = 30    # a level seen in fewer incidents (in the train set) is grouped with the rare ones
+
+# split by opening date: oldest 60% = train, next 20% = validation, last 20% = test
+TRAIN_SHARE = 0.6
+VAL_SHARE = 0.2
