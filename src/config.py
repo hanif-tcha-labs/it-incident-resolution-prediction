@@ -145,3 +145,12 @@ MIN_FREQUENCY = 30    # a level seen in fewer incidents (in the train set) is gr
 # split by opening date: oldest 60% = train, next 20% = validation, last 20% = test
 TRAIN_SHARE = 0.6
 VAL_SHARE = 0.2
+
+# ---------------------------------------------------------------- final model (notebooks 06 and 07)
+MODELS_DIR = PROJECT_ROOT / "models"
+
+# Chosen in notebook 06 on the validation MAE. The target is used as log(1 + hours).
+FINAL_MODEL_PARAMS = {
+    "learning_rate": 0.03, "max_iter": 400, "max_leaf_nodes": 31,
+    "l2_regularization": 0, "loss": "squared_error",
+}

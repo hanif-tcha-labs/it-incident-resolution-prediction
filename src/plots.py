@@ -129,3 +129,33 @@ def plot_median_by_time(table, target_col, name="median_target_by_opening_time")
         ax.set_ylabel("Median resolution time (h)")
         ax.tick_params(axis="x", rotation=60)
     save_fig(fig, name)
+
+
+# ---------------------------------------------------------------- final evaluation (notebook 07)
+def plot_actual_vs_predicted(y_true, y_pred, name="actual_vs_predicted"):
+    """Actual vs predicted time (log scale), and the distribution of the errors in hours."""
+    y_true, y_pred = np.asarray(y_true), np.asarray(y_pred)
+    x, y = np.log10(1 + y_true), np.log10(1 + y_pred)
+    fig, axes = plt.subplots(1, 2, figsize=(11, 4))
+    axes[0].scatter(x, y, s=6, alpha=0.3, color="#4C72B0")
+    top = max(x.max(), y.max())
+    axes[0].plot([0, top], [0, top], color="#C44E52", lw=1)   # perfect prediction
+    axes[0].set_xlabel("Actual: log10(1 + hours)")
+    axes[0].set_ylabel("Predicted: log10(1 + hours)")
+    axes[0].set_title("Actual vs predicted")
+    axes[1].hist(np.clip(y_pred - y_true, -500, 500), bins=60, color="#4C72B0", edgecolor="white")
+    axes[1].axvline(0, color="#C44E52", lw=1)
+    axes[1].set_xlabel("Prediction - actual (hours, cut at +-500)")
+    axes[1].set_ylabel("Incidents")
+    axes[1].set_title("Errors")
+    save_fig(fig, name)
+
+
+def plot_importance(importance, name="permutation_importance"):
+    """Bars of the increase in MAE when a feature is shuffled."""
+    data = importance.sort_values("mean")
+    fig, ax = plt.subplots(figsize=(7, 0.35 * len(data) + 1.2))
+    ax.barh(data.index, data["mean"], xerr=data["std"], color="#55A868")
+    ax.set_xlabel("Increase in MAE when the feature is shuffled (hours)")
+    ax.set_title("Permutation importance (test set)")
+    save_fig(fig, name)
