@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block title %}Interpretation - IT Incident Resolution ML{% endblock %}
+{% block page_title %}Feature Importance & Explainability{% endblock %}
+
+{% block content %}
+<div class="banner banner-warning">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+  <div>
+    <strong>Association vs Causality:</strong> Permutation importance measures how much the model depends on a feature to make accurate statistical forecasts. It <strong>never</strong> means that changing a field in a ticket will cause the resolution time to change.
+  </div>
+</div>
+
+<!-- Permutation Importance Chart -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Permutation Importance on Test Set</h3>
+      <p class="card-description">Increase in test MAE (hours) when each feature is individually shuffled (5 repeats)</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <div style="height: 380px; position: relative;">
+      <canvas id="importanceChart"></canvas>
+    </div>
+
+    <div class="card-interpretation">
+      <strong>Feature Contribution Dynamics:</strong>
+      <ul style="padding-left: 1.2rem; margin-top: 0.35rem; line-height: 1.6;">
+        <li><code>assignment_group</code> is the dominant predictor (+14.06 h MAE increase), followed by <code>sys_created_by</code> (+8.74 h) and <code>category</code> (+3.54 h).</li>
+        <li><strong>Priority vs Group:</strong> <code>priority</code>, <code>impact</code>, and <code>urgency</code> contribute minimal standalone gain (+0.08 h) once the technical handling team is known. In practice, ticket priority reflects requester escalation rather than technical problem complexity.</li>
+        <li><code>sys_created_by</code> captures automated ticket routing patterns: system-generated tickets resolve in median 0.4 h versus 48.5 h for manually triaged records.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Grouped Importance Table -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Grouped Feature Shuffling</h3>
+      <p class="card-description">Increase in MAE when correlated feature subsets are permuted simultaneously</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Feature Group</th>
+            <th>Features Shuffled Together</th>
+            <th>MAE Increase (hours)</th>
+            <th>Operational Interpretation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Priority + Impact + Urgency</strong></td>
+            <td><code>priority</code>, <code>impact</code>, <code>urgency</code></td>
+            <td><strong>+0.08 h</strong></td>
+            <td>Confirming that ticket urgency ratings carry almost no unique duration signal beyond what assignment group and category already capture.</td>
+          </tr>
+          <tr>
+            <td><strong>Opening Time Dimensions</strong></td>
+            <td><code>hour</code>, <code>weekday</code></td>
+            <td><strong>+0.21 h</strong></td>
+            <td>Opening time has a minor influence on initial resolution speed, mainly distinguishing business hours from weekend batch processing.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("/api/v1/interpretation/importance")
+    .then(r => r.json())
+    .then(data => {
+      const items = (data.individual || []).slice().reverse();
+      const labels = items.map(i => i.feature);
+      const values = items.map(i => i.mean);
+
+      const ctx = document.getElementById("importanceChart").getContext("2d");
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: labels,
+          datasets: [{
+            label: "Increase in Test MAE (hours)",
+            data: values,
+            backgroundColor: values.map(v => v > 5 ? "#2563eb" : v > 1 ? "#38bdf8" : "#94a3b8"),
+            borderRadius: 4,
+          }]
+        },
+        options: {
+          indexAxis: "y",
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: { title: { display: true, text: "MAE Increase (hours)" }, beginAtZero: true }
+          }
+        }
+      });
+    });
+});
+</script>
+{% endblock %}

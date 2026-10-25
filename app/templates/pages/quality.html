@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+{% block title %}Data Quality - IT Incident Resolution ML{% endblock %}
+{% block page_title %}Data Quality Audit & Reconstruction Funnel{% endblock %}
+
+{% block content %}
+<div class="banner banner-info">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+  <div>
+    <strong>Audit Scope:</strong> Every incident was verified for integrity, chronological consistency, and missing values. No outliers or valid incidents were dropped; only the 13 tickets without any resolution were excluded.
+  </div>
+</div>
+
+<!-- Funnel KPIs -->
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-label">Raw Events</div>
+    <div class="kpi-value">141,712</div>
+    <div class="kpi-subtext">0 duplicate rows found in log</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Unique Incidents</div>
+    <div class="kpi-value">24,918</div>
+    <div class="kpi-subtext">Identified by unique incident number</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Excluded (No Target)</div>
+    <div class="kpi-value" style="color: var(--accent-danger);">13</div>
+    <div class="kpi-subtext">0.05% never resolved (documented separately)</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Reconstructed Table</div>
+    <div class="kpi-value" style="color: var(--accent-success);">24,905</div>
+    <div class="kpi-subtext">99.95% retained for modeling</div>
+  </div>
+</div>
+
+<!-- Special Cases -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Special Case Diagnostics</h3>
+      <p class="card-description">Specific operational patterns identified during the initial audit</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Pattern / Anomaly</th>
+            <th>Incidents</th>
+            <th>Share (%)</th>
+            <th>Methodological Treatment & Justification</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Never Resolved (No Target)</strong></td>
+            <td>13</td>
+            <td>0.05%</td>
+            <td><strong>Excluded:</strong> Incidents never reached state 'Resolved' and had empty <code>resolved_at</code>. Target cannot be computed; saved separately in <code>data/interim/incidents_without_target.csv</code>.</td>
+          </tr>
+          <tr>
+            <td><strong>Created Already Resolved</strong></td>
+            <td>1,819</td>
+            <td>7.30%</td>
+            <td><strong>Kept:</strong> Tickets logged retroactively where the first event is already 'Resolved' (target is 0 or very small). Sensitivity analysis confirmed that dropping them does not alter validation MAE (106.3 h vs 106.2 h).</td>
+          </tr>
+          <tr>
+            <td><strong>Reopened Incidents</strong></td>
+            <td>275</td>
+            <td>1.10%</td>
+            <td><strong>Kept:</strong> Tickets reopened after an initial resolution (<code>reopen_count > 0</code>). The target takes the timestamp of the final resolution event to capture total customer wait time.</td>
+          </tr>
+          <tr>
+            <td><strong>Resolved in &lt; 1 Hour</strong></td>
+            <td>7,503</td>
+            <td>30.12%</td>
+            <td><strong>Kept:</strong> Common standard quick-resolution tickets (password resets, self-service queries). Valid operational records, not errors.</td>
+          </tr>
+          <tr>
+            <td><strong>Open &gt; 180 Days</strong></td>
+            <td>125</td>
+            <td>0.50%</td>
+            <td><strong>Kept:</strong> Real long-running edge cases (major infrastructure issues, vendor dependencies). Kept to avoid artificial data truncation.</td>
+          </tr>
+          <tr>
+            <td><strong>Missing <code>sys_created_by</code></strong></td>
+            <td>11,495</td>
+            <td>46.16%</td>
+            <td><strong>Kept:</strong> System-created field missing for nearly half the tickets. Treated as an explicit distinct categorical level in the pipeline.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-interpretation">
+      <strong>Data Engineering Protocol:</strong> No synthetic outlier removal was applied. The data pipeline preserves natural operational variance where routine self-service tickets coexist with multi-month critical escalations.
+    </div>
+  </div>
+</div>
+
+<!-- Missing Values Breakdown -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Missing Values Breakdown by Attribute (Top 12)</h3>
+      <p class="card-description">Frequency of <code>?</code> missing value markers across raw log columns</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="data-table" id="missingTable">
+        <thead>
+          <tr>
+            <th>Column Name</th>
+            <th>Missing Events</th>
+            <th>% Missing</th>
+            <th>Status in Modeling Pipeline</th>
+          </tr>
+        </thead>
+        <tbody id="missingTableBody">
+          <tr><td colspan="4">Loading missing values audit...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("/api/v1/data/quality")
+    .then(r => r.json())
+    .then(data => {
+      const missing = data.missing_values || {};
+      const sorted = Object.entries(missing)
+        .map(([col, info]) => ({ col, ...info }))
+        .sort((a, b) => b.pct_missing - a.pct_missing);
+
+      const tbody = document.getElementById("missingTableBody");
+      tbody.innerHTML = sorted.map(item => `
+        <tr>
+          <td><code>${item.col}</code></td>
+          <td>${item.missing_events.toLocaleString()}</td>
+          <td>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="min-width: 45px;">${item.pct_missing}%</span>
+              <div style="flex: 1; height: 6px; background: var(--bg-surface-alt); border-radius: 3px; overflow: hidden; max-width: 120px;">
+                <div style="width: ${Math.min(item.pct_missing, 100)}%; height: 100%; background: ${item.pct_missing > 50 ? 'var(--accent-danger)' : item.pct_missing > 10 ? 'var(--accent-warning)' : 'var(--brand-primary)'};"></div>
+              </div>
+            </div>
+          </td>
+          <td>
+            ${item.pct_missing > 90 ? '<span class="badge badge-slow">Excluded (&gt;90% missing)</span>' :
+              item.col === 'sys_created_by' ? '<span class="badge badge-moderate">Retained (missing is a level)</span>' :
+              item.col.includes('_at') ? '<span class="badge badge-slow">Target / Lifecycle</span>' :
+              '<span class="badge badge-fast">Retained as feature</span>'}
+          </td>
+        </tr>
+      `).join("");
+    });
+});
+</script>
+{% endblock %}

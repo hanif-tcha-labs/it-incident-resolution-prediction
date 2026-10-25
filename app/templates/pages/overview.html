@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block title %}Overview - IT Incident Resolution ML{% endblock %}
+{% block page_title %}Project Overview & Business Context{% endblock %}
+
+{% block content %}
+<div class="banner banner-info">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+  <div>
+    Estimate incident resolution time at ticket opening using the information available at that point.
+  </div>
+</div>
+
+<!-- 4 Key Headline KPI Cards -->
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-label">Raw Events Logged</div>
+    <div class="kpi-value" id="kpiEvents">141,712</div>
+    <div class="kpi-subtext">ServiceNow event stream across 24,918 incidents</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Incidents with Target</div>
+    <div class="kpi-value" id="kpiIncidents">24,905</div>
+    <div class="kpi-subtext">99.95% of tickets (13 unresolved excluded)</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Test Set MAE (Model)</div>
+    <div class="kpi-value" id="kpiModelMae">117.2 h</div>
+    <div class="kpi-subtext">HistGradientBoosting on log-transformed target</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">MAE Reduction vs Baseline</div>
+    <div class="kpi-value" id="kpiGain">-11.5%</div>
+    <div class="kpi-subtext">Baseline median: 132.5 h (15.2 h improvement)</div>
+  </div>
+</div>
+
+<!-- Context & Problem Formulation -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Business Problem & Prediction Moment</h3>
+      <p class="card-description">Framing the regression problem within IT service management operations</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <p style="margin-bottom: 1rem;">
+      When an IT incident is opened, support teams need realistic expectations of resolution time to prioritize resources, prevent SLA breaches, and manage stakeholder expectations.
+    </p>
+    <div class="form-grid" style="margin-bottom: 1.5rem;">
+      <div style="background: var(--bg-surface-alt); padding: 1.25rem; border-radius: var(--radius-sm); border-left: 3px solid var(--brand-primary);">
+        <strong style="color: var(--brand-primary); font-size: 0.95rem;">Target Definition:</strong>
+        <p style="margin-top: 0.35rem; font-size: 0.88rem;">
+          <code>resolution_hours</code> = timestamp of last resolution minus opening timestamp (<code>opened_at</code>).
+          The target is highly skewed (median: 16.1 h, mean: 167.3 h, maximum: 8,070 h). Administrative closure (<code>closed_at</code>) is deliberately not used because it reflects ticketing delays (~120 h later) rather than active resolution work.
+        </p>
+      </div>
+      <div style="background: var(--bg-surface-alt); padding: 1.25rem; border-radius: var(--radius-sm); border-left: 3px solid var(--accent-success);">
+        <strong style="color: var(--accent-success); font-size: 0.95rem;">Prediction Moment:</strong>
+        <p style="margin-top: 0.35rem; font-size: 0.88rem;">
+          At ticket creation (first logged event). Only information known at opening enters the model. Counters that increase during resolution (reassignments, updates) or fields recorded upon closure are strictly quarantined to eliminate data leakage.
+        </p>
+      </div>
+    </div>
+
+    <h4 style="margin-bottom: 0.75rem; font-size: 0.95rem;">Model Workflow</h4>
+    <div class="table-responsive">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Input</th>
+            <th>Operation</th>
+            <th>Output / Output Volume</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Raw Log</strong></td>
+            <td><code>incident_event_log.csv</code></td>
+            <td>Audit formatting, parse explicit dates, standardize missing values (<code>?</code>)</td>
+            <td>141,712 events, 36 columns</td>
+          </tr>
+          <tr>
+            <td><strong>2. Reconstruction</strong></td>
+            <td>Event rows grouped by <code>number</code></td>
+            <td>Extract first event attributes; compute resolution timestamp from last resolution</td>
+            <td>24,905 incidents with valid target</td>
+          </tr>
+          <tr>
+            <td><strong>3. Feature Selection</strong></td>
+            <td>Candidate attributes</td>
+            <td>Strict temporal boundary filter: retain 13 categorical features; exclude leakage fields</td>
+            <td>13 features + target</td>
+          </tr>
+          <tr>
+            <td><strong>4. Temporal Split</strong></td>
+            <td>Incident table sorted by <code>opened_at</code></td>
+            <td>Chronological partitioning: 60% train, 20% validation, 20% test</td>
+            <td>Train: 14,943 | Val: 4,981 | Test: 4,981</td>
+          </tr>
+          <tr>
+            <td><strong>5. Model Pipeline</strong></td>
+            <td>Train + Validation data</td>
+            <td>OneHotEncoder (min_freq=30) + HistGradientBoosting on log1p(hours)</td>
+            <td>Final fitted pipeline (MAE 117.2 h)</td>
+          </tr>
+          <tr>
+            <td><strong>6. Final Evaluation</strong></td>
+            <td>Held-out Test Set</td>
+            <td>Evaluated once on test set with 1,000 bootstrap iterations and subgroup audits</td>
+            <td>Fitted model artifact</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-interpretation">
+      <strong>Model Performance Summary:</strong> The pipeline yields an 11.5% MAE reduction over the running median baseline. Fast-track tickets (&lt;1 h) are resolved with high precision (MAE 8.2 h vs 20.4 h baseline), whereas complex cases exceeding 24 h represent 91% of cumulative forecast variance.
+    </div>
+  </div>
+</div>
+{% endblock %}

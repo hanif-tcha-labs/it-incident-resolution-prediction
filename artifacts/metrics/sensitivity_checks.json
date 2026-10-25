@@ -1,0 +1,38 @@
+[
+  {
+    "variant": "reference",
+    "n train": 14943,
+    "MAE": 106.22,
+    "RMSE": 399.31,
+    "RMSLE": 1.8,
+    "mean error": -81.38,
+    "fit seconds": 15.89
+  },
+  {
+    "variant": "train from 28 March",
+    "n train": 7353,
+    "MAE": 106.41,
+    "RMSE": 395.19,
+    "RMSLE": 1.81,
+    "mean error": -81.29,
+    "fit seconds": 8.51
+  },
+  {
+    "variant": "without sys_created_by",
+    "n train": 14943,
+    "MAE": 107.52,
+    "RMSE": 400.31,
+    "RMSLE": 1.92,
+    "mean error": -83.68,
+    "fit seconds": 12.14
+  },
+  {
+    "variant": "train without created Resolved",
+    "n train": 13629,
+    "MAE": 106.67,
+    "RMSE": 399.75,
+    "RMSLE": 1.84,
+    "mean error": -79.16,
+    "fit seconds": 12.04
+  }
+]

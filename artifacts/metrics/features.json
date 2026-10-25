@@ -1,0 +1,105 @@
+{
+  "features": [
+    "priority",
+    "impact",
+    "urgency",
+    "category",
+    "subcategory",
+    "u_symptom",
+    "assignment_group",
+    "location",
+    "contact_type",
+    "opened_by",
+    "sys_created_by",
+    "hour",
+    "weekday"
+  ],
+  "min_frequency": 30,
+  "target": "resolution_hours",
+  "excluded": [
+    {
+      "column": "caller_id",
+      "reason": "Too many rare categories (high cardinality)."
+    },
+    {
+      "column": "notify",
+      "reason": "Almost constant across incidents."
+    },
+    {
+      "column": "cmdb_ci",
+      "reason": "99.7% missing values."
+    },
+    {
+      "column": "sys_created_at",
+      "reason": "Redundant, nearly identical to opened_at."
+    },
+    {
+      "column": "incident_state",
+      "reason": "Known only after opening (data leakage)."
+    },
+    {
+      "column": "active",
+      "reason": "Known only after opening (data leakage)."
+    },
+    {
+      "column": "reassignment_count",
+      "reason": "Increases during resolution process (leakage)."
+    },
+    {
+      "column": "reopen_count",
+      "reason": "Increases after first resolution (leakage)."
+    },
+    {
+      "column": "sys_mod_count",
+      "reason": "Event counter during incident handling (leakage)."
+    },
+    {
+      "column": "made_sla",
+      "reason": "Process outcome directly tied to resolution time."
+    },
+    {
+      "column": "assigned_to",
+      "reason": "Assigned during handling, often empty at opening."
+    },
+    {
+      "column": "knowledge",
+      "reason": "Flagged when article used during resolution."
+    },
+    {
+      "column": "u_priority_confirmation",
+      "reason": "Confirmed during handling."
+    },
+    {
+      "column": "problem_id",
+      "reason": "Linked problem record attached later."
+    },
+    {
+      "column": "rfc",
+      "reason": "Change request attached later."
+    },
+    {
+      "column": "vendor",
+      "reason": "Vendor assigned later."
+    },
+    {
+      "column": "caused_by",
+      "reason": "Identified after root cause analysis."
+    },
+    {
+      "column": "closed_code",
+      "reason": "Closure code set at resolution."
+    },
+    {
+      "column": "resolved_by",
+      "reason": "Staff member who resolved the ticket."
+    },
+    {
+      "column": "resolved_at",
+      "reason": "End timestamp of resolution target."
+    },
+    {
+      "column": "closed_at",
+      "reason": "Administrative closure timestamp."
+    }
+  ]
+}

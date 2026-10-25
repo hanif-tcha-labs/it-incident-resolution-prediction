@@ -1,0 +1,326 @@
+[
+  {
+    "model": "Ridge",
+    "params": "{'log_target': False, 'alpha': 0.1}",
+    "MAE": 162.37,
+    "RMSE": 385.13,
+    "RMSLE": 2.98,
+    "mean error": 30.33,
+    "fit seconds": 0.76
+  },
+  {
+    "model": "Ridge",
+    "params": "{'log_target': True, 'alpha': 0.1}",
+    "MAE": 108.31,
+    "RMSE": 397.75,
+    "RMSLE": 1.87,
+    "mean error": -79.45,
+    "fit seconds": 0.6
+  },
+  {
+    "model": "Ridge",
+    "params": "{'log_target': False, 'alpha': 1}",
+    "MAE": 162.58,
+    "RMSE": 385.05,
+    "RMSLE": 2.98,
+    "mean error": 30.57,
+    "fit seconds": 0.48
+  },
+  {
+    "model": "Ridge",
+    "params": "{'log_target': True, 'alpha': 1}",
+    "MAE": 108.26,
+    "RMSE": 397.83,
+    "RMSLE": 1.87,
+    "mean error": -79.62,
+    "fit seconds": 0.49
+  },
+  {
+    "model": "Ridge",
+    "params": "{'log_target': False, 'alpha': 10}",
+    "MAE": 163.57,
+    "RMSE": 385.26,
+    "RMSLE": 3.01,
+    "mean error": 31.78,
+    "fit seconds": 0.37
+  },
+  {
+    "model": "Ridge",
+    "params": "{'log_target': True, 'alpha': 10}",
+    "MAE": 108.26,
+    "RMSE": 399.3,
+    "RMSLE": 1.88,
+    "mean error": -80.76,
+    "fit seconds": 0.35
+  },
+  {
+    "model": "Ridge",
+    "params": "{'log_target': False, 'alpha': 100}",
+    "MAE": 167.22,
+    "RMSE": 388.39,
+    "RMSLE": 3.04,
+    "mean error": 36.56,
+    "fit seconds": 0.38
+  },
+  {
+    "model": "Ridge",
+    "params": "{'log_target': True, 'alpha': 100}",
+    "MAE": 109.99,
+    "RMSE": 409.49,
+    "RMSLE": 1.92,
+    "mean error": -85.33,
+    "fit seconds": 0.39
+  },
+  {
+    "model": "Random Forest",
+    "params": "{'n_estimators': 200, 'min_samples_split': 30, 'min_samples_leaf': 1, 'max_depth': 20, 'log_target': True}",
+    "MAE": 107.97,
+    "RMSE": 402.62,
+    "RMSLE": 1.84,
+    "mean error": -77.55,
+    "fit seconds": 39.55
+  },
+  {
+    "model": "Random Forest",
+    "params": "{'n_estimators': 100, 'min_samples_split': 30, 'min_samples_leaf': 5, 'max_depth': 10, 'log_target': False}",
+    "MAE": 158.41,
+    "RMSE": 382.97,
+    "RMSLE": 3.08,
+    "mean error": 29.06,
+    "fit seconds": 15.19
+  },
+  {
+    "model": "Random Forest",
+    "params": "{'n_estimators': 100, 'min_samples_split': 30, 'min_samples_leaf': 1, 'max_depth': 10, 'log_target': False}",
+    "MAE": 163.7,
+    "RMSE": 388.69,
+    "RMSLE": 3.13,
+    "mean error": 34.77,
+    "fit seconds": 14.9
+  },
+  {
+    "model": "Random Forest",
+    "params": "{'n_estimators': 200, 'min_samples_split': 30, 'min_samples_leaf': 5, 'max_depth': 20, 'log_target': True}",
+    "MAE": 107.72,
+    "RMSE": 401.58,
+    "RMSLE": 1.83,
+    "mean error": -78.83,
+    "fit seconds": 37.1
+  },
+  {
+    "model": "Random Forest",
+    "params": "{'n_estimators': 100, 'min_samples_split': 10, 'min_samples_leaf': 5, 'max_depth': 10, 'log_target': True}",
+    "MAE": 108.22,
+    "RMSE": 402.64,
+    "RMSLE": 1.85,
+    "mean error": -80.27,
+    "fit seconds": 15.45
+  },
+  {
+    "model": "Random Forest",
+    "params": "{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 20, 'max_depth': 10, 'log_target': True}",
+    "MAE": 108.22,
+    "RMSE": 400.92,
+    "RMSLE": 1.88,
+    "mean error": -80.12,
+    "fit seconds": 25.51
+  },
+  {
+    "model": "Random Forest",
+    "params": "{'n_estimators': 100, 'min_samples_split': 2, 'min_samples_leaf': 20, 'max_depth': 20, 'log_target': False}",
+    "MAE": 156.3,
+    "RMSE": 387.75,
+    "RMSLE": 2.89,
+    "mean error": 28.11,
+    "fit seconds": 19.42
+  },
+  {
+    "model": "Random Forest",
+    "params": "{'n_estimators': 200, 'min_samples_split': 10, 'min_samples_leaf': 5, 'max_depth': None, 'log_target': False}",
+    "MAE": 149.19,
+    "RMSE": 382.92,
+    "RMSLE": 2.72,
+    "mean error": 21.04,
+    "fit seconds": 51.41
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 15, 'max_iter': 400, 'loss': 'squared_error', 'log_target': True, 'learning_rate': 0.03, 'l2_regularization': 1}",
+    "MAE": 106.88,
+    "RMSE": 401.99,
+    "RMSLE": 1.81,
+    "mean error": -83.61,
+    "fit seconds": 12.99
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 15, 'max_iter': 100, 'loss': 'squared_error', 'log_target': False, 'learning_rate': 0.03, 'l2_regularization': 1}",
+    "MAE": 167.06,
+    "RMSE": 381.7,
+    "RMSLE": 3.37,
+    "mean error": 37.11,
+    "fit seconds": 2.57
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 63, 'max_iter': 100, 'loss': 'absolute_error', 'log_target': True, 'learning_rate': 0.03, 'l2_regularization': 1}",
+    "MAE": 107.48,
+    "RMSE": 397.95,
+    "RMSLE": 1.89,
+    "mean error": -71.05,
+    "fit seconds": 9.72
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 15, 'max_iter': 100, 'loss': 'absolute_error', 'log_target': False, 'learning_rate': 0.03, 'l2_regularization': 0}",
+    "MAE": 111.0,
+    "RMSE": 396.13,
+    "RMSLE": 2.01,
+    "mean error": -67.2,
+    "fit seconds": 4.14
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 15, 'max_iter': 100, 'loss': 'squared_error', 'log_target': False, 'learning_rate': 0.1, 'l2_regularization': 1}",
+    "MAE": 156.05,
+    "RMSE": 380.18,
+    "RMSLE": 3.08,
+    "mean error": 27.15,
+    "fit seconds": 2.69
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 15, 'max_iter': 100, 'loss': 'squared_error', 'log_target': True, 'learning_rate': 0.03, 'l2_regularization': 1}",
+    "MAE": 109.29,
+    "RMSE": 411.09,
+    "RMSLE": 1.87,
+    "mean error": -86.57,
+    "fit seconds": 2.83
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 15, 'max_iter': 200, 'loss': 'squared_error', 'log_target': False, 'learning_rate': 0.03, 'l2_regularization': 10}",
+    "MAE": 158.62,
+    "RMSE": 379.24,
+    "RMSLE": 3.2,
+    "mean error": 29.85,
+    "fit seconds": 4.78
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 31, 'max_iter': 400, 'loss': 'absolute_error', 'log_target': False, 'learning_rate': 0.1, 'l2_regularization': 1}",
+    "MAE": 110.1,
+    "RMSE": 384.84,
+    "RMSLE": 1.98,
+    "mean error": -54.92,
+    "fit seconds": 18.82
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 63, 'max_iter': 200, 'loss': 'absolute_error', 'log_target': False, 'learning_rate': 0.05, 'l2_regularization': 10}",
+    "MAE": 109.86,
+    "RMSE": 387.25,
+    "RMSLE": 1.96,
+    "mean error": -56.63,
+    "fit seconds": 16.8
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 15, 'max_iter': 100, 'loss': 'squared_error', 'log_target': False, 'learning_rate': 0.05, 'l2_regularization': 1}",
+    "MAE": 160.84,
+    "RMSE": 380.12,
+    "RMSLE": 3.24,
+    "mean error": 31.55,
+    "fit seconds": 2.65
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 63, 'max_iter': 400, 'loss': 'absolute_error', 'log_target': True, 'learning_rate': 0.05, 'l2_regularization': 1}",
+    "MAE": 107.94,
+    "RMSE": 392.21,
+    "RMSLE": 1.88,
+    "mean error": -62.54,
+    "fit seconds": 38.16
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 63, 'max_iter': 100, 'loss': 'squared_error', 'log_target': True, 'learning_rate': 0.05, 'l2_regularization': 1}",
+    "MAE": 106.57,
+    "RMSE": 401.23,
+    "RMSLE": 1.8,
+    "mean error": -80.92,
+    "fit seconds": 9.85
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 31, 'max_iter': 100, 'loss': 'absolute_error', 'log_target': False, 'learning_rate': 0.03, 'l2_regularization': 10}",
+    "MAE": 111.0,
+    "RMSE": 393.85,
+    "RMSLE": 1.99,
+    "mean error": -64.1,
+    "fit seconds": 7.08
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 31, 'max_iter': 400, 'loss': 'absolute_error', 'log_target': False, 'learning_rate': 0.03, 'l2_regularization': 1}",
+    "MAE": 109.19,
+    "RMSE": 387.91,
+    "RMSLE": 1.94,
+    "mean error": -59.31,
+    "fit seconds": 22.85
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 15, 'max_iter': 400, 'loss': 'squared_error', 'log_target': False, 'learning_rate': 0.1, 'l2_regularization': 1}",
+    "MAE": 153.42,
+    "RMSE": 383.11,
+    "RMSLE": 2.91,
+    "mean error": 23.41,
+    "fit seconds": 8.8
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 63, 'max_iter': 200, 'loss': 'absolute_error', 'log_target': False, 'learning_rate': 0.1, 'l2_regularization': 10}",
+    "MAE": 109.3,
+    "RMSE": 382.89,
+    "RMSLE": 1.96,
+    "mean error": -54.01,
+    "fit seconds": 21.89
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 63, 'max_iter': 400, 'loss': 'squared_error', 'log_target': False, 'learning_rate': 0.1, 'l2_regularization': 10}",
+    "MAE": 160.5,
+    "RMSE": 394.83,
+    "RMSLE": 2.88,
+    "mean error": 26.35,
+    "fit seconds": 27.44
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 63, 'max_iter': 400, 'loss': 'squared_error', 'log_target': False, 'learning_rate': 0.03, 'l2_regularization': 1}",
+    "MAE": 150.64,
+    "RMSE": 383.15,
+    "RMSLE": 2.85,
+    "mean error": 20.01,
+    "fit seconds": 30.09
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 31, 'max_iter': 400, 'loss': 'squared_error', 'log_target': True, 'learning_rate': 0.03, 'l2_regularization': 0}",
+    "MAE": 106.22,
+    "RMSE": 399.31,
+    "RMSLE": 1.8,
+    "mean error": -81.38,
+    "fit seconds": 19.08
+  },
+  {
+    "model": "HistGradientBoosting",
+    "params": "{'max_leaf_nodes': 63, 'max_iter': 200, 'loss': 'squared_error', 'log_target': False, 'learning_rate': 0.03, 'l2_regularization': 0}",
+    "MAE": 150.89,
+    "RMSE": 381.69,
+    "RMSLE": 2.93,
+    "mean error": 21.79,
+    "fit seconds": 12.89
+  }
+]

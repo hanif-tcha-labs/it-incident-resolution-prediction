@@ -1,0 +1,485 @@
+{
+  "by_duration": [
+    {
+      "duration": "under 1 h",
+      "n": 2159,
+      "pct_test": 43.34,
+      "MAE_baseline": 20.44,
+      "MAE_model": 8.19,
+      "mean_error": 8.18,
+      "pct_of_total_error": 3.03
+    },
+    {
+      "duration": "1 to 24 h",
+      "n": 1027,
+      "pct_test": 20.62,
+      "MAE_baseline": 13.08,
+      "MAE_model": 31.83,
+      "mean_error": 29.58,
+      "pct_of_total_error": 5.6
+    },
+    {
+      "duration": "over 24 h",
+      "n": 1795,
+      "pct_test": 36.04,
+      "MAE_baseline": 335.59,
+      "MAE_model": 297.28,
+      "mean_error": -273.91,
+      "pct_of_total_error": 91.37
+    }
+  ],
+  "by_priority": [
+    {
+      "priority": "1 - Critical",
+      "n": 35,
+      "pct_test": 0.7,
+      "MAE_baseline": 138.33,
+      "MAE_model": 140.25,
+      "mean_error": -97.8,
+      "pct_of_total_error": 0.84
+    },
+    {
+      "priority": "2 - High",
+      "n": 61,
+      "pct_test": 1.22,
+      "MAE_baseline": 84.35,
+      "MAE_model": 91.41,
+      "mean_error": -41.86,
+      "pct_of_total_error": 0.95
+    },
+    {
+      "priority": "3 - Moderate",
+      "n": 4764,
+      "pct_test": 95.64,
+      "MAE_baseline": 135.03,
+      "MAE_model": 119.28,
+      "mean_error": -91.1,
+      "pct_of_total_error": 97.3
+    },
+    {
+      "priority": "4 - Low",
+      "n": 121,
+      "pct_test": 2.43,
+      "MAE_baseline": 55.19,
+      "MAE_model": 43.47,
+      "mean_error": -30.2,
+      "pct_of_total_error": 0.9
+    }
+  ],
+  "by_category": [
+    {
+      "category": "Category 10",
+      "n": 3,
+      "pct_test": 0.06,
+      "MAE_baseline": 72.74,
+      "MAE_model": 59.42,
+      "mean_error": -18.61,
+      "pct_of_total_error": 0.03
+    },
+    {
+      "category": "Category 12",
+      "n": 1,
+      "pct_test": 0.02,
+      "MAE_baseline": 32.74,
+      "MAE_model": 40.07,
+      "mean_error": 40.07,
+      "pct_of_total_error": 0.01
+    },
+    {
+      "category": "Category 13",
+      "n": 8,
+      "pct_test": 0.16,
+      "MAE_baseline": 78.06,
+      "MAE_model": 84.46,
+      "mean_error": -54.8,
+      "pct_of_total_error": 0.12
+    },
+    {
+      "category": "Category 14",
+      "n": 1,
+      "pct_test": 0.02,
+      "MAE_baseline": 67.08,
+      "MAE_model": 32.37,
+      "mean_error": 32.37,
+      "pct_of_total_error": 0.01
+    },
+    {
+      "category": "Category 16",
+      "n": 2,
+      "pct_test": 0.04,
+      "MAE_baseline": 17.73,
+      "MAE_model": 56.35,
+      "mean_error": 56.35,
+      "pct_of_total_error": 0.02
+    },
+    {
+      "category": "Category 17",
+      "n": 14,
+      "pct_test": 0.28,
+      "MAE_baseline": 26.87,
+      "MAE_model": 23.06,
+      "mean_error": -4.45,
+      "pct_of_total_error": 0.06
+    },
+    {
+      "category": "Category 19",
+      "n": 52,
+      "pct_test": 1.04,
+      "MAE_baseline": 274.94,
+      "MAE_model": 266.82,
+      "mean_error": -229.88,
+      "pct_of_total_error": 2.38
+    },
+    {
+      "category": "Category 2",
+      "n": 5,
+      "pct_test": 0.1,
+      "MAE_baseline": 159.12,
+      "MAE_model": 139.46,
+      "mean_error": -87.65,
+      "pct_of_total_error": 0.12
+    },
+    {
+      "category": "Category 20",
+      "n": 203,
+      "pct_test": 4.08,
+      "MAE_baseline": 43.21,
+      "MAE_model": 29.37,
+      "mean_error": -25.24,
+      "pct_of_total_error": 1.02
+    },
+    {
+      "category": "Category 21",
+      "n": 8,
+      "pct_test": 0.16,
+      "MAE_baseline": 46.39,
+      "MAE_model": 47.36,
+      "mean_error": -10.3,
+      "pct_of_total_error": 0.06
+    },
+    {
+      "category": "Category 22",
+      "n": 5,
+      "pct_test": 0.1,
+      "MAE_baseline": 128.72,
+      "MAE_model": 146.12,
+      "mean_error": 66.71,
+      "pct_of_total_error": 0.13
+    },
+    {
+      "category": "Category 23",
+      "n": 220,
+      "pct_test": 4.42,
+      "MAE_baseline": 132.83,
+      "MAE_model": 129.95,
+      "mean_error": -103.48,
+      "pct_of_total_error": 4.9
+    },
+    {
+      "category": "Category 24",
+      "n": 115,
+      "pct_test": 2.31,
+      "MAE_baseline": 300.88,
+      "MAE_model": 280.82,
+      "mean_error": -231.79,
+      "pct_of_total_error": 5.53
+    },
+    {
+      "category": "Category 25",
+      "n": 3,
+      "pct_test": 0.06,
+      "MAE_baseline": 141.39,
+      "MAE_model": 138.49,
+      "mean_error": -41.11,
+      "pct_of_total_error": 0.07
+    },
+    {
+      "category": "Category 26",
+      "n": 642,
+      "pct_test": 12.89,
+      "MAE_baseline": 54.54,
+      "MAE_model": 41.13,
+      "mean_error": -33.98,
+      "pct_of_total_error": 4.52
+    },
+    {
+      "category": "Category 28",
+      "n": 117,
+      "pct_test": 2.35,
+      "MAE_baseline": 49.07,
+      "MAE_model": 34.5,
+      "mean_error": -21.33,
+      "pct_of_total_error": 0.69
+    },
+    {
+      "category": "Category 29",
+      "n": 4,
+      "pct_test": 0.08,
+      "MAE_baseline": 191.99,
+      "MAE_model": 199.78,
+      "mean_error": -134.17,
+      "pct_of_total_error": 0.14
+    },
+    {
+      "category": "Category 31",
+      "n": 13,
+      "pct_test": 0.26,
+      "MAE_baseline": 93.41,
+      "MAE_model": 80.44,
+      "mean_error": -66.85,
+      "pct_of_total_error": 0.18
+    },
+    {
+      "category": "Category 32",
+      "n": 294,
+      "pct_test": 5.9,
+      "MAE_baseline": 61.08,
+      "MAE_model": 49.34,
+      "mean_error": -45.98,
+      "pct_of_total_error": 2.48
+    },
+    {
+      "category": "Category 33",
+      "n": 14,
+      "pct_test": 0.28,
+      "MAE_baseline": 1197.23,
+      "MAE_model": 798.28,
+      "mean_error": -791.88,
+      "pct_of_total_error": 1.91
+    },
+    {
+      "category": "Category 34",
+      "n": 80,
+      "pct_test": 1.61,
+      "MAE_baseline": 855.57,
+      "MAE_model": 566.0,
+      "mean_error": -442.37,
+      "pct_of_total_error": 7.75
+    },
+    {
+      "category": "Category 35",
+      "n": 76,
+      "pct_test": 1.53,
+      "MAE_baseline": 23.66,
+      "MAE_model": 6.53,
+      "mean_error": -3.99,
+      "pct_of_total_error": 0.08
+    },
+    {
+      "category": "Category 37",
+      "n": 257,
+      "pct_test": 5.16,
+      "MAE_baseline": 107.86,
+      "MAE_model": 102.65,
+      "mean_error": -80.07,
+      "pct_of_total_error": 4.52
+    },
+    {
+      "category": "Category 38",
+      "n": 8,
+      "pct_test": 0.16,
+      "MAE_baseline": 55.4,
+      "MAE_model": 67.54,
+      "mean_error": 1.06,
+      "pct_of_total_error": 0.09
+    },
+    {
+      "category": "Category 4",
+      "n": 4,
+      "pct_test": 0.08,
+      "MAE_baseline": 152.82,
+      "MAE_model": 143.1,
+      "mean_error": -84.13,
+      "pct_of_total_error": 0.1
+    },
+    {
+      "category": "Category 40",
+      "n": 49,
+      "pct_test": 0.98,
+      "MAE_baseline": 73.3,
+      "MAE_model": 69.19,
+      "mean_error": -42.89,
+      "pct_of_total_error": 0.58
+    },
+    {
+      "category": "Category 42",
+      "n": 909,
+      "pct_test": 18.25,
+      "MAE_baseline": 68.3,
+      "MAE_model": 56.58,
+      "mean_error": -45.56,
+      "pct_of_total_error": 8.81
+    },
+    {
+      "category": "Category 43",
+      "n": 39,
+      "pct_test": 0.78,
+      "MAE_baseline": 199.63,
+      "MAE_model": 191.18,
+      "mean_error": -170.0,
+      "pct_of_total_error": 1.28
+    },
+    {
+      "category": "Category 44",
+      "n": 54,
+      "pct_test": 1.08,
+      "MAE_baseline": 105.42,
+      "MAE_model": 107.42,
+      "mean_error": -86.32,
+      "pct_of_total_error": 0.99
+    },
+    {
+      "category": "Category 45",
+      "n": 57,
+      "pct_test": 1.14,
+      "MAE_baseline": 541.49,
+      "MAE_model": 523.6,
+      "mean_error": -318.33,
+      "pct_of_total_error": 5.11
+    },
+    {
+      "category": "Category 46",
+      "n": 488,
+      "pct_test": 9.8,
+      "MAE_baseline": 233.96,
+      "MAE_model": 228.2,
+      "mean_error": -155.74,
+      "pct_of_total_error": 19.07
+    },
+    {
+      "category": "Category 48",
+      "n": 1,
+      "pct_test": 0.02,
+      "MAE_baseline": 237.09,
+      "MAE_model": 208.99,
+      "mean_error": -208.99,
+      "pct_of_total_error": 0.04
+    },
+    {
+      "category": "Category 5",
+      "n": 10,
+      "pct_test": 0.2,
+      "MAE_baseline": 20.52,
+      "MAE_model": 10.93,
+      "mean_error": 10.93,
+      "pct_of_total_error": 0.02
+    },
+    {
+      "category": "Category 50",
+      "n": 14,
+      "pct_test": 0.28,
+      "MAE_baseline": 66.84,
+      "MAE_model": 60.43,
+      "mean_error": -48.35,
+      "pct_of_total_error": 0.14
+    },
+    {
+      "category": "Category 51",
+      "n": 29,
+      "pct_test": 0.58,
+      "MAE_baseline": 89.93,
+      "MAE_model": 79.51,
+      "mean_error": -50.06,
+      "pct_of_total_error": 0.39
+    },
+    {
+      "category": "Category 52",
+      "n": 5,
+      "pct_test": 0.1,
+      "MAE_baseline": 29.39,
+      "MAE_model": 31.71,
+      "mean_error": -5.97,
+      "pct_of_total_error": 0.03
+    },
+    {
+      "category": "Category 53",
+      "n": 414,
+      "pct_test": 8.31,
+      "MAE_baseline": 143.16,
+      "MAE_model": 133.08,
+      "mean_error": -108.57,
+      "pct_of_total_error": 9.43
+    },
+    {
+      "category": "Category 54",
+      "n": 25,
+      "pct_test": 0.5,
+      "MAE_baseline": 193.03,
+      "MAE_model": 228.92,
+      "mean_error": -113.72,
+      "pct_of_total_error": 0.98
+    },
+    {
+      "category": "Category 56",
+      "n": 30,
+      "pct_test": 0.6,
+      "MAE_baseline": 475.36,
+      "MAE_model": 467.76,
+      "mean_error": -415.55,
+      "pct_of_total_error": 2.4
+    },
+    {
+      "category": "Category 57",
+      "n": 282,
+      "pct_test": 5.66,
+      "MAE_baseline": 129.04,
+      "MAE_model": 124.92,
+      "mean_error": -99.14,
+      "pct_of_total_error": 6.03
+    },
+    {
+      "category": "Category 59",
+      "n": 5,
+      "pct_test": 0.1,
+      "MAE_baseline": 226.72,
+      "MAE_model": 198.98,
+      "mean_error": -98.15,
+      "pct_of_total_error": 0.17
+    },
+    {
+      "category": "Category 6",
+      "n": 2,
+      "pct_test": 0.04,
+      "MAE_baseline": 113.83,
+      "MAE_model": 117.41,
+      "mean_error": -108.02,
+      "pct_of_total_error": 0.04
+    },
+    {
+      "category": "Category 61",
+      "n": 137,
+      "pct_test": 2.75,
+      "MAE_baseline": 126.71,
+      "MAE_model": 112.3,
+      "mean_error": -80.08,
+      "pct_of_total_error": 2.63
+    },
+    {
+      "category": "Category 7",
+      "n": 6,
+      "pct_test": 0.12,
+      "MAE_baseline": 126.1,
+      "MAE_model": 59.08,
+      "mean_error": -49.34,
+      "pct_of_total_error": 0.06
+    },
+    {
+      "category": "Category 8",
+      "n": 10,
+      "pct_test": 0.2,
+      "MAE_baseline": 102.58,
+      "MAE_model": 101.44,
+      "mean_error": -83.56,
+      "pct_of_total_error": 0.17
+    },
+    {
+      "category": "Category 9",
+      "n": 253,
+      "pct_test": 5.08,
+      "MAE_baseline": 115.14,
+      "MAE_model": 107.28,
+      "mean_error": -67.48,
+      "pct_of_total_error": 4.65
+    }
+  ]
+}

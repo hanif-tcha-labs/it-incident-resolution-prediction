@@ -1,0 +1,34 @@
+[
+  {
+    "Unnamed: 0": "Baseline (median)",
+    "MAE": 122.46,
+    "RMSE": 433.94,
+    "RMSLE": 2.59,
+    "mean error": -90.4,
+    "fit seconds": NaN
+  },
+  {
+    "Unnamed: 0": "HistGradientBoosting",
+    "MAE": 106.22,
+    "RMSE": 399.31,
+    "RMSLE": 1.8,
+    "mean error": -81.38,
+    "fit seconds": 19.08
+  },
+  {
+    "Unnamed: 0": "Random Forest",
+    "MAE": 107.72,
+    "RMSE": 401.58,
+    "RMSLE": 1.83,
+    "mean error": -78.83,
+    "fit seconds": 37.1
+  },
+  {
+    "Unnamed: 0": "Ridge",
+    "MAE": 108.26,
+    "RMSE": 399.3,
+    "RMSLE": 1.88,
+    "mean error": -80.76,
+    "fit seconds": 0.35
+  }
+]

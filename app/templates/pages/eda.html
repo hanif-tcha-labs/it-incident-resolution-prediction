@@ -1,0 +1,216 @@
+{% extends "base.html" %}
+{% block title %}Explore (EDA) - IT Incident Resolution ML{% endblock %}
+{% block page_title %}Exploratory Data Analysis & Target Distribution{% endblock %}
+
+{% block content %}
+<div class="banner banner-warning">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+  <div>
+    <strong>Extreme Skewness:</strong> Resolution time spans from 0 hours to over 8,000 hours (skewness 7.1). The mean (167.3 h) is more than 10 times the median (16.1 h). A log1p transformation is critical to prevent extreme outliers from distorting gradient descent.
+  </div>
+</div>
+
+<!-- Distribution KPIs -->
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-label">Median Duration</div>
+    <div class="kpi-value">16.1 h</div>
+    <div class="kpi-subtext">50% of incidents resolved under 16.1 h</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Mean Duration</div>
+    <div class="kpi-value">167.3 h</div>
+    <div class="kpi-subtext">Skewed by rare multi-month incidents</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Under 1 Hour</div>
+    <div class="kpi-value" style="color: var(--accent-success);">36.3%</div>
+    <div class="kpi-subtext">9,045 quick tickets (median: 0.1 h)</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Over 7 Days (&gt;168h)</div>
+    <div class="kpi-value" style="color: var(--accent-danger);">21.5%</div>
+    <div class="kpi-subtext">5,354 long-running escalations</div>
+  </div>
+</div>
+
+<!-- Chart: Log Scale Target Histogram -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Target Duration Distribution (Log Scale)</h3>
+      <p class="card-description">Histogram of log10(1 + resolution_hours) across all 24,905 incidents</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <div style="height: 320px; position: relative;">
+      <canvas id="targetHistChart"></canvas>
+    </div>
+    <div class="card-interpretation">
+      <strong>Distribution Profile:</strong> The duration distribution is bimodal on a log scale: a concentrated volume of quick routine tickets (&lt;1 h), alongside a broader distribution of technical investigations centered around 20–50 hours.
+    </div>
+  </div>
+</div>
+
+<!-- Interactive Group Explorer -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Resolution Duration by Category Explorer</h3>
+      <p class="card-description">Examine incident counts, median duration, and 90th percentile by attribute</p>
+    </div>
+    <div>
+      <select id="groupSelect" class="form-control" style="width: 220px; font-weight: 600;">
+        <option value="priority">Priority</option>
+        <option value="impact">Impact</option>
+        <option value="urgency">Urgency</option>
+        <option value="category">Category (Top 15)</option>
+        <option value="assignment_group">Assignment Group (Top 15)</option>
+        <option value="weekday">Weekday (0=Mon .. 6=Sun)</option>
+        <option value="hour">Hour of Day (0 .. 23)</option>
+        <option value="month">Month</option>
+      </select>
+    </div>
+  </div>
+  <div class="card-body">
+    <div style="height: 340px; position: relative; margin-bottom: 1.5rem;">
+      <canvas id="groupByChart"></canvas>
+    </div>
+
+    <div class="table-responsive">
+      <table class="data-table" id="groupTable">
+        <thead>
+          <tr>
+            <th>Group Level</th>
+            <th>Number of Incidents</th>
+            <th>Median Duration (h)</th>
+            <th>Mean Duration (h)</th>
+            <th>90th Percentile (p90 h)</th>
+          </tr>
+        </thead>
+        <tbody id="groupTableBody">
+          <tr><td colspan="5">Loading group data...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-interpretation" id="groupInterpretationText">
+      <strong>Note on Priority:</strong> Critical and High incidents exhibit longer median resolution times than Moderate or Low incidents (likely because difficult tickets are escalated to higher priority). However, as shown later in permutation importance, Priority brings almost no unique predictive value over Assignment Group.
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let histChart = null;
+let groupChart = null;
+
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Load Target Distribution Histogram
+  fetch("/api/v1/eda/target-distribution")
+    .then(r => r.json())
+    .then(data => {
+      const hist = data.log_histogram || [];
+      const labels = hist.map(h => `${h.bin_start}`);
+      const counts = hist.map(h => h.count);
+
+      const ctx = document.getElementById("targetHistChart").getContext("2d");
+      histChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: labels,
+          datasets: [{
+            label: "Incident Count",
+            data: counts,
+            backgroundColor: "#2563eb",
+            borderRadius: 4,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                title: (items) => `log10(1 + hours): ~${items[0].label}`,
+                label: (item) => `Tickets: ${item.raw.toLocaleString()}`
+              }
+            }
+          },
+          scales: {
+            x: { title: { display: true, text: "log10(1 + resolution time in hours)" } },
+            y: { title: { display: true, text: "Number of Incidents" }, beginAtZero: true }
+          }
+        }
+      });
+    });
+
+  // 2. Load By-Group Explorer
+  const groupSelect = document.getElementById("groupSelect");
+  loadGroupData(groupSelect.value);
+
+  groupSelect.addEventListener("change", (e) => {
+    loadGroupData(e.target.value);
+  });
+});
+
+function loadGroupData(groupName) {
+  fetch(`/api/v1/eda/by-group?by=${groupName}`)
+    .then(r => r.json())
+    .then(data => {
+      let cats = data.categories || [];
+      if (cats.length > 15) cats = cats.slice(0, 15);
+
+      const labels = cats.map(c => c.category);
+      const medians = cats.map(c => c.median);
+      const p90s = cats.map(c => c.p90);
+
+      // Render chart
+      const ctx = document.getElementById("groupByChart").getContext("2d");
+      if (groupChart) groupChart.destroy();
+
+      groupChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: "Median Duration (hours)",
+              data: medians,
+              backgroundColor: "#2563eb",
+              borderRadius: 4,
+            },
+            {
+              label: "90th Percentile (p90 hours)",
+              data: p90s,
+              backgroundColor: "#94a3b8",
+              borderRadius: 4,
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: { title: { display: true, text: "Hours" }, beginAtZero: true }
+          }
+        }
+      });
+
+      // Render table
+      const tbody = document.getElementById("groupTableBody");
+      tbody.innerHTML = cats.map(c => `
+        <tr>
+          <td><strong>${c.category}</strong></td>
+          <td>${c.n.toLocaleString()}</td>
+          <td><span class="badge badge-fast">${c.median} h</span></td>
+          <td>${c.mean} h</td>
+          <td><span class="badge badge-slow">${c.p90} h</span></td>
+        </tr>
+      `).join("");
+    });
+}
+</script>
+{% endblock %}

@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+{% block title %}Final Results - IT Incident Resolution ML{% endblock %}
+{% block page_title %}Final Test Set Evaluation & Error Breakdown{% endblock %}
+
+{% block content %}
+<div class="banner banner-warning">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+  <div>
+    <strong>Primary Weakness:</strong> Incidents lasting more than 24 hours make up 36% of the test set but generate <strong>91% of total model error</strong>. The model excels at identifying fast tickets (<1h) but systematically underestimates slow, complex tickets.
+  </div>
+</div>
+
+<!-- Test Set Headline KPIs -->
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-label">Test Set MAE (Model)</div>
+    <div class="kpi-value" style="color: var(--brand-primary);">117.24 h</div>
+    <div class="kpi-subtext">95% Bootstrap CI: [106.8, 127.8] h</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Test Set MAE (Baseline)</div>
+    <div class="kpi-value">132.49 h</div>
+    <div class="kpi-subtext">Median of train + validation split</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Absolute MAE Gain</div>
+    <div class="kpi-value" style="color: var(--accent-success);">-15.25 h</div>
+    <div class="kpi-subtext">95% Bootstrap CI: [4.9, 26.0] h reduction</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Test RMSLE</div>
+    <div class="kpi-value">1.74</div>
+    <div class="kpi-subtext">Baseline: 2.44 (28.7% improvement)</div>
+  </div>
+</div>
+
+<!-- Final Test Metrics Table -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Final Test Set Performance (Single Evaluation)</h3>
+      <p class="card-description">Model fitted once on train + validation (19,924 tickets) and evaluated on unseen test set (4,981 tickets)</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Predictor</th>
+            <th>MAE (hours)</th>
+            <th>RMSE (hours)</th>
+            <th>RMSLE</th>
+            <th>Mean Signed Error (hours)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>HistGradientBoosting (log target)</strong></td>
+            <td><span class="badge badge-fast">117.24 h</span></td>
+            <td>419.16 h</td>
+            <td>1.74</td>
+            <td>-89.06 h</td>
+          </tr>
+          <tr>
+            <td><strong>Baseline (Median)</strong></td>
+            <td><span class="badge badge-slow">132.49 h</span></td>
+            <td>454.66 h</td>
+            <td>2.44</td>
+            <td>-109.47 h</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-interpretation">
+      <strong>Error Distribution Analysis:</strong> Predictions are on average 89 h too low, heavily pulled down by long incidents. However, <strong>64.4% of tickets</strong> are slightly over-estimated with a median error of only <strong>+0.7 h</strong>. Most fast tickets are predicted accurately; the large mean error comes from a long tail of severe underestimations.
+    </div>
+  </div>
+</div>
+
+<!-- Errors by Duration Class -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Error Breakdown by Real Incident Duration</h3>
+      <p class="card-description">Demonstrating where the model succeeds and where it fails</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="data-table" id="durationErrorTable">
+        <thead>
+          <tr>
+            <th>Duration Bracket</th>
+            <th>Test Incidents</th>
+            <th>% of Test Set</th>
+            <th>Baseline MAE (h)</th>
+            <th>Model MAE (h)</th>
+            <th>Mean Signed Error (h)</th>
+            <th>Share of Total Model Error</th>
+          </tr>
+        </thead>
+        <tbody id="durationErrorBody">
+          <tr><td colspan="7">Loading duration errors...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Weekly Error Tracking Chart -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Weekly Test Set Error Progression</h3>
+      <p class="card-description">Model MAE vs Baseline MAE on test incidents week by week</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <div style="height: 320px; position: relative;">
+      <canvas id="weeklyErrorsChart"></canvas>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Errors by Duration Table
+  fetch("/api/v1/evaluation/errors-by-group?by=duration")
+    .then(r => r.json())
+    .then(data => {
+      const records = data.records || [];
+      const tbody = document.getElementById("durationErrorBody");
+      tbody.innerHTML = records.map(r => `
+        <tr>
+          <td><strong>${r.duration}</strong></td>
+          <td>${r.n.toLocaleString()}</td>
+          <td>${r.pct_test}%</td>
+          <td>${r.MAE_baseline} h</td>
+          <td><span class="badge ${r.MAE_model < 50 ? 'badge-fast' : 'badge-slow'}">${r.MAE_model} h</span></td>
+          <td>${r.mean_error} h</td>
+          <td><strong style="color: ${r.pct_of_total_error > 50 ? 'var(--accent-danger)' : 'var(--text-primary)'}">${r.pct_of_total_error}%</strong></td>
+        </tr>
+      `).join("");
+    });
+
+  // 2. Weekly Errors Chart
+  fetch("/api/v1/evaluation/weekly")
+    .then(r => r.json())
+    .then(data => {
+      // Filter out weeks with very few incidents for cleaner line visual
+      const filtered = data.filter(w => w.n >= 5);
+      const labels = filtered.map(w => w.week.split("/")[0]);
+      const modelMae = filtered.map(w => w.MAE_model);
+      const baseMae = filtered.map(w => w.MAE_baseline);
+
+      const ctx = document.getElementById("weeklyErrorsChart").getContext("2d");
+      new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: "HistGradientBoosting MAE (hours)",
+              data: modelMae,
+              borderColor: "#2563eb",
+              backgroundColor: "rgba(37, 99, 235, 0.1)",
+              borderWidth: 2,
+              tension: 0.2,
+            },
+            {
+              label: "Baseline Median MAE (hours)",
+              data: baseMae,
+              borderColor: "#ef4444",
+              borderDash: [5, 5],
+              borderWidth: 2,
+              tension: 0.2,
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: { title: { display: true, text: "MAE (hours)" }, beginAtZero: true }
+          }
+        }
+      });
+    });
+});
+</script>
+{% endblock %}

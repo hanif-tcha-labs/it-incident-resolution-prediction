@@ -64,6 +64,14 @@ data/processed/*
 *.xlsx
 *.xls
 
+# Allow artifacts (model, replay dataset, metrics)
+!artifacts/
+!artifacts/**
+
+# Database
+*.db
+data/predictions.db
+
 
 # Keep folder structure
 
@@ -77,6 +85,7 @@ models/*
 !models/.gitkeep
 *.pkl
 *.joblib
+!artifacts/model/final_pipeline.joblib
 *.h5
 *.hdf5
 *.onnx

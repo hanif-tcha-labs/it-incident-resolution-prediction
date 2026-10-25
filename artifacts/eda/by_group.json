@@ -1,0 +1,1315 @@
+{
+  "priority": [
+    {
+      "category": "1 - Critical",
+      "n": 185,
+      "median": 51.35,
+      "mean": 189.93,
+      "p90": 466.99
+    },
+    {
+      "category": "2 - High",
+      "n": 311,
+      "median": 49.2,
+      "mean": 162.8,
+      "p90": 381.68
+    },
+    {
+      "category": "3 - Moderate",
+      "n": 23677,
+      "median": 15.88,
+      "mean": 164.94,
+      "p90": 359.68
+    },
+    {
+      "category": "4 - Low",
+      "n": 732,
+      "median": 0.97,
+      "mean": 239.16,
+      "p90": 387.59
+    }
+  ],
+  "impact": [
+    {
+      "category": "1 - High",
+      "n": 286,
+      "median": 49.04,
+      "mean": 184.62,
+      "p90": 482.36
+    },
+    {
+      "category": "2 - Medium",
+      "n": 23902,
+      "median": 16.42,
+      "mean": 165.5,
+      "p90": 360.61
+    },
+    {
+      "category": "3 - Low",
+      "n": 717,
+      "median": 0.82,
+      "mean": 219.78,
+      "p90": 358.11
+    }
+  ],
+  "urgency": [
+    {
+      "category": "1 - High",
+      "n": 395,
+      "median": 52.72,
+      "mean": 172.41,
+      "p90": 382.61
+    },
+    {
+      "category": "2 - Medium",
+      "n": 23835,
+      "median": 16.07,
+      "mean": 165.14,
+      "p90": 360.18
+    },
+    {
+      "category": "3 - Low",
+      "n": 675,
+      "median": 0.68,
+      "mean": 239.96,
+      "p90": 373.01
+    }
+  ],
+  "category": [
+    {
+      "category": "Category 42",
+      "n": 3628,
+      "median": 0.35,
+      "mean": 93.45,
+      "p90": 163.69
+    },
+    {
+      "category": "Category 26",
+      "n": 3267,
+      "median": 1.5,
+      "mean": 73.8,
+      "p90": 236.87
+    },
+    {
+      "category": "Category 53",
+      "n": 2655,
+      "median": 24.45,
+      "mean": 126.51,
+      "p90": 330.4
+    },
+    {
+      "category": "Category 46",
+      "n": 2243,
+      "median": 48.32,
+      "mean": 283.67,
+      "p90": 739.82
+    },
+    {
+      "category": "Category 32",
+      "n": 1495,
+      "median": 0.33,
+      "mean": 52.56,
+      "p90": 172.06
+    },
+    {
+      "category": "Category 9",
+      "n": 1141,
+      "median": 41.4,
+      "mean": 146.8,
+      "p90": 363.23
+    },
+    {
+      "category": "Category 37",
+      "n": 1135,
+      "median": 19.18,
+      "mean": 119.41,
+      "p90": 307.21
+    },
+    {
+      "category": "Category 23",
+      "n": 1071,
+      "median": 44.47,
+      "mean": 156.61,
+      "p90": 424.87
+    },
+    {
+      "category": "Category 20",
+      "n": 1067,
+      "median": 0.93,
+      "mean": 57.34,
+      "p90": 188.22
+    },
+    {
+      "category": "Category 57",
+      "n": 916,
+      "median": 32.83,
+      "mean": 152.89,
+      "p90": 334.92
+    },
+    {
+      "category": "Category 61",
+      "n": 805,
+      "median": 95.43,
+      "mean": 179.94,
+      "p90": 431.27
+    },
+    {
+      "category": "Category 40",
+      "n": 686,
+      "median": 79.12,
+      "mean": 189.73,
+      "p90": 414.85
+    },
+    {
+      "category": "Category 24",
+      "n": 638,
+      "median": 70.44,
+      "mean": 272.71,
+      "p90": 547.86
+    },
+    {
+      "category": "Category 45",
+      "n": 625,
+      "median": 185.58,
+      "mean": 531.82,
+      "p90": 1455.53
+    },
+    {
+      "category": "Category 51",
+      "n": 545,
+      "median": 0.2,
+      "mean": 45.48,
+      "p90": 129.99
+    },
+    {
+      "category": "Category 28",
+      "n": 522,
+      "median": 0.05,
+      "mean": 84.92,
+      "p90": 357.96
+    },
+    {
+      "category": "Category 35",
+      "n": 512,
+      "median": 0.2,
+      "mean": 19.36,
+      "p90": 71.63
+    },
+    {
+      "category": "Category 34",
+      "n": 498,
+      "median": 396.71,
+      "mean": 1322.54,
+      "p90": 4040.64
+    },
+    {
+      "category": "Category 44",
+      "n": 331,
+      "median": 27.65,
+      "mean": 150.05,
+      "p90": 409.0
+    },
+    {
+      "category": "Category 19",
+      "n": 220,
+      "median": 48.73,
+      "mean": 242.86,
+      "p90": 677.19
+    },
+    {
+      "category": "Category 43",
+      "n": 172,
+      "median": 19.7,
+      "mean": 151.82,
+      "p90": 378.91
+    },
+    {
+      "category": "Category 13",
+      "n": 119,
+      "median": 48.6,
+      "mean": 92.06,
+      "p90": 251.44
+    },
+    {
+      "category": "Category 55",
+      "n": 99,
+      "median": 197.68,
+      "mean": 778.09,
+      "p90": 2427.11
+    },
+    {
+      "category": "Category 17",
+      "n": 72,
+      "median": 19.25,
+      "mean": 115.54,
+      "p90": 216.82
+    },
+    {
+      "category": "Category 8",
+      "n": 52,
+      "median": 26.67,
+      "mean": 92.6,
+      "p90": 188.13
+    },
+    {
+      "category": "Category 22",
+      "n": 47,
+      "median": 334.35,
+      "mean": 427.94,
+      "p90": 1143.44
+    },
+    {
+      "category": "Missing",
+      "n": 39,
+      "median": 42.88,
+      "mean": 210.96,
+      "p90": 366.48
+    },
+    {
+      "category": "Category 38",
+      "n": 37,
+      "median": 80.53,
+      "mean": 208.18,
+      "p90": 656.6
+    },
+    {
+      "category": "Category 41",
+      "n": 36,
+      "median": 178.28,
+      "mean": 188.68,
+      "p90": 331.12
+    },
+    {
+      "category": "Category 56",
+      "n": 35,
+      "median": 40.17,
+      "mean": 464.57,
+      "p90": 884.83
+    },
+    {
+      "category": "Category 7",
+      "n": 31,
+      "median": 159.87,
+      "mean": 292.69,
+      "p90": 742.42
+    },
+    {
+      "category": "Category 54",
+      "n": 29,
+      "median": 16.33,
+      "mean": 182.64,
+      "p90": 498.27
+    },
+    {
+      "category": "Category 31",
+      "n": 18,
+      "median": 93.63,
+      "mean": 158.6,
+      "p90": 429.63
+    },
+    {
+      "category": "Category 33",
+      "n": 14,
+      "median": 698.14,
+      "mean": 1217.92,
+      "p90": 2821.43
+    },
+    {
+      "category": "Category 50",
+      "n": 14,
+      "median": 4.93,
+      "mean": 64.8,
+      "p90": 73.08
+    },
+    {
+      "category": "Category 63",
+      "n": 11,
+      "median": 23.03,
+      "mean": 103.57,
+      "p90": 282.67
+    },
+    {
+      "category": "Category 5",
+      "n": 10,
+      "median": 0.15,
+      "mean": 0.17,
+      "p90": 0.34
+    },
+    {
+      "category": "Category 21",
+      "n": 8,
+      "median": 58.08,
+      "mean": 62.08,
+      "p90": 101.37
+    },
+    {
+      "category": "Category 47",
+      "n": 6,
+      "median": 239.41,
+      "mean": 296.56,
+      "p90": 622.88
+    },
+    {
+      "category": "Category 29",
+      "n": 6,
+      "median": 79.6,
+      "mean": 921.86,
+      "p90": 2673.13
+    },
+    {
+      "category": "Category 4",
+      "n": 6,
+      "median": 76.69,
+      "mean": 219.73,
+      "p90": 565.91
+    },
+    {
+      "category": "Category 2",
+      "n": 5,
+      "median": 0.97,
+      "mean": 148.5,
+      "p90": 443.9
+    },
+    {
+      "category": "Category 30",
+      "n": 5,
+      "median": 174.62,
+      "mean": 176.4,
+      "p90": 309.8
+    },
+    {
+      "category": "Category 59",
+      "n": 5,
+      "median": 338.8,
+      "mean": 233.8,
+      "p90": 425.39
+    },
+    {
+      "category": "Category 52",
+      "n": 5,
+      "median": 1.05,
+      "mean": 25.68,
+      "p90": 67.05
+    },
+    {
+      "category": "Category 62",
+      "n": 5,
+      "median": 144.7,
+      "mean": 350.71,
+      "p90": 787.07
+    },
+    {
+      "category": "Category 25",
+      "n": 5,
+      "median": 53.08,
+      "mean": 656.15,
+      "p90": 1849.04
+    },
+    {
+      "category": "Category 10",
+      "n": 3,
+      "median": 114.97,
+      "mean": 93.43,
+      "p90": 118.78
+    },
+    {
+      "category": "Category 16",
+      "n": 2,
+      "median": 2.97,
+      "mean": 2.97,
+      "p90": 4.17
+    },
+    {
+      "category": "Category 6",
+      "n": 2,
+      "median": 116.69,
+      "mean": 116.69,
+      "p90": 207.75
+    },
+    {
+      "category": "Category 3",
+      "n": 1,
+      "median": 21.23,
+      "mean": 21.23,
+      "p90": 21.23
+    },
+    {
+      "category": "Category 12",
+      "n": 1,
+      "median": 53.43,
+      "mean": 53.43,
+      "p90": 53.43
+    },
+    {
+      "category": "Category 14",
+      "n": 1,
+      "median": 87.77,
+      "mean": 87.77,
+      "p90": 87.77
+    },
+    {
+      "category": "Category 15",
+      "n": 1,
+      "median": 0.37,
+      "mean": 0.37,
+      "p90": 0.37
+    },
+    {
+      "category": "Category 27",
+      "n": 1,
+      "median": 1.58,
+      "mean": 1.58,
+      "p90": 1.58
+    },
+    {
+      "category": "Category 48",
+      "n": 1,
+      "median": 257.78,
+      "mean": 257.78,
+      "p90": 257.78
+    },
+    {
+      "category": "Category 49",
+      "n": 1,
+      "median": 434.22,
+      "mean": 434.22,
+      "p90": 434.22
+    }
+  ],
+  "contact_type": [
+    {
+      "category": "Phone",
+      "n": 24680,
+      "median": 15.57,
+      "mean": 166.52,
+      "p90": 360.34
+    },
+    {
+      "category": "Self service",
+      "n": 161,
+      "median": 48.15,
+      "mean": 298.41,
+      "p90": 720.07
+    },
+    {
+      "category": "Email",
+      "n": 61,
+      "median": 145.97,
+      "mean": 137.24,
+      "p90": 315.78
+    },
+    {
+      "category": "Direct opening",
+      "n": 3,
+      "median": 17.27,
+      "mean": 21.98,
+      "p90": 41.52
+    }
+  ],
+  "assignment_group": [
+    {
+      "category": "Group 70",
+      "n": 12781,
+      "median": 0.57,
+      "mean": 72.03,
+      "p90": 209.12
+    },
+    {
+      "category": "Group 20",
+      "n": 1367,
+      "median": 56.6,
+      "mean": 210.36,
+      "p90": 483.47
+    },
+    {
+      "category": "Missing",
+      "n": 905,
+      "median": 71.72,
+      "mean": 151.11,
+      "p90": 361.08
+    },
+    {
+      "category": "Group 25",
+      "n": 764,
+      "median": 77.97,
+      "mean": 173.5,
+      "p90": 382.76
+    },
+    {
+      "category": "Group 24",
+      "n": 698,
+      "median": 20.11,
+      "mean": 101.95,
+      "p90": 213.4
+    },
+    {
+      "category": "Group 64",
+      "n": 622,
+      "median": 0.05,
+      "mean": 14.58,
+      "p90": 43.11
+    },
+    {
+      "category": "Group 65",
+      "n": 500,
+      "median": 40.1,
+      "mean": 200.26,
+      "p90": 401.46
+    },
+    {
+      "category": "Group 55",
+      "n": 416,
+      "median": 24.87,
+      "mean": 204.11,
+      "p90": 476.16
+    },
+    {
+      "category": "Group 66",
+      "n": 389,
+      "median": 156.5,
+      "mean": 414.35,
+      "p90": 983.55
+    },
+    {
+      "category": "Group 39",
+      "n": 375,
+      "median": 24.4,
+      "mean": 131.42,
+      "p90": 381.55
+    },
+    {
+      "category": "Group 9",
+      "n": 344,
+      "median": 1378.41,
+      "mean": 1781.95,
+      "p90": 4724.24
+    },
+    {
+      "category": "Group 57",
+      "n": 341,
+      "median": 115.43,
+      "mean": 330.76,
+      "p90": 772.77
+    },
+    {
+      "category": "Group 73",
+      "n": 330,
+      "median": 30.97,
+      "mean": 111.19,
+      "p90": 240.28
+    },
+    {
+      "category": "Group 10",
+      "n": 324,
+      "median": 357.01,
+      "mean": 618.19,
+      "p90": 1682.22
+    },
+    {
+      "category": "Group 28",
+      "n": 304,
+      "median": 53.33,
+      "mean": 161.05,
+      "p90": 387.54
+    },
+    {
+      "category": "Group 76",
+      "n": 298,
+      "median": 90.77,
+      "mean": 167.58,
+      "p90": 382.77
+    },
+    {
+      "category": "Group 27",
+      "n": 297,
+      "median": 22.8,
+      "mean": 161.45,
+      "p90": 247.04
+    },
+    {
+      "category": "Group 5",
+      "n": 294,
+      "median": 29.19,
+      "mean": 192.98,
+      "p90": 468.69
+    },
+    {
+      "category": "Group 22",
+      "n": 291,
+      "median": 69.68,
+      "mean": 278.71,
+      "p90": 817.53
+    },
+    {
+      "category": "Group 23",
+      "n": 273,
+      "median": 1.45,
+      "mean": 69.46,
+      "p90": 161.48
+    },
+    {
+      "category": "Group 29",
+      "n": 243,
+      "median": 126.47,
+      "mean": 226.64,
+      "p90": 502.88
+    },
+    {
+      "category": "Group 54",
+      "n": 164,
+      "median": 54.02,
+      "mean": 140.93,
+      "p90": 333.14
+    },
+    {
+      "category": "Group 31",
+      "n": 157,
+      "median": 146.22,
+      "mean": 889.17,
+      "p90": 3037.14
+    },
+    {
+      "category": "Group 33",
+      "n": 156,
+      "median": 166.47,
+      "mean": 744.35,
+      "p90": 2193.39
+    },
+    {
+      "category": "Group 58",
+      "n": 154,
+      "median": 38.56,
+      "mean": 206.15,
+      "p90": 521.93
+    },
+    {
+      "category": "Group 6",
+      "n": 151,
+      "median": 121.43,
+      "mean": 346.54,
+      "p90": 978.23
+    },
+    {
+      "category": "Group 72",
+      "n": 149,
+      "median": 99.75,
+      "mean": 193.01,
+      "p90": 529.95
+    },
+    {
+      "category": "Group 30",
+      "n": 133,
+      "median": 19.68,
+      "mean": 140.91,
+      "p90": 191.72
+    },
+    {
+      "category": "Group 51",
+      "n": 126,
+      "median": 62.87,
+      "mean": 148.22,
+      "p90": 317.47
+    },
+    {
+      "category": "Group 46",
+      "n": 124,
+      "median": 2.31,
+      "mean": 203.46,
+      "p90": 246.24
+    },
+    {
+      "category": "Group 37",
+      "n": 121,
+      "median": 220.3,
+      "mean": 544.79,
+      "p90": 1320.65
+    },
+    {
+      "category": "Group 69",
+      "n": 120,
+      "median": 24.74,
+      "mean": 174.39,
+      "p90": 329.66
+    },
+    {
+      "category": "Group 56",
+      "n": 113,
+      "median": 28.0,
+      "mean": 94.19,
+      "p90": 281.2
+    },
+    {
+      "category": "Group 3",
+      "n": 93,
+      "median": 141.13,
+      "mean": 587.9,
+      "p90": 2192.77
+    },
+    {
+      "category": "Group 48",
+      "n": 92,
+      "median": 48.75,
+      "mean": 157.37,
+      "p90": 333.18
+    },
+    {
+      "category": "Group 12",
+      "n": 91,
+      "median": 237.55,
+      "mean": 281.32,
+      "p90": 497.63
+    },
+    {
+      "category": "Group 49",
+      "n": 78,
+      "median": 5.11,
+      "mean": 90.22,
+      "p90": 318.78
+    },
+    {
+      "category": "Group 19",
+      "n": 76,
+      "median": 6.62,
+      "mean": 38.31,
+      "p90": 74.82
+    },
+    {
+      "category": "Group 74",
+      "n": 73,
+      "median": 121.0,
+      "mean": 162.84,
+      "p90": 365.28
+    },
+    {
+      "category": "Group 75",
+      "n": 63,
+      "median": 392.7,
+      "mean": 519.68,
+      "p90": 1046.67
+    },
+    {
+      "category": "Group 53",
+      "n": 61,
+      "median": 26.42,
+      "mean": 97.79,
+      "p90": 189.5
+    },
+    {
+      "category": "Group 34",
+      "n": 53,
+      "median": 22.97,
+      "mean": 355.97,
+      "p90": 852.17
+    },
+    {
+      "category": "Group 50",
+      "n": 49,
+      "median": 53.45,
+      "mean": 253.75,
+      "p90": 589.31
+    },
+    {
+      "category": "Group 15",
+      "n": 37,
+      "median": 190.35,
+      "mean": 804.11,
+      "p90": 3389.45
+    },
+    {
+      "category": "Group 21",
+      "n": 35,
+      "median": 137.22,
+      "mean": 403.31,
+      "p90": 785.89
+    },
+    {
+      "category": "Group 82",
+      "n": 35,
+      "median": 45.35,
+      "mean": 163.53,
+      "p90": 515.65
+    },
+    {
+      "category": "Group 47",
+      "n": 31,
+      "median": 24.35,
+      "mean": 130.67,
+      "p90": 287.88
+    },
+    {
+      "category": "Group 81",
+      "n": 30,
+      "median": 111.02,
+      "mean": 444.11,
+      "p90": 977.54
+    },
+    {
+      "category": "Group 67",
+      "n": 27,
+      "median": 330.43,
+      "mean": 936.74,
+      "p90": 2221.85
+    },
+    {
+      "category": "Group 68",
+      "n": 22,
+      "median": 770.97,
+      "mean": 713.87,
+      "p90": 1570.55
+    },
+    {
+      "category": "Group 35",
+      "n": 17,
+      "median": 149.42,
+      "mean": 667.4,
+      "p90": 1220.48
+    },
+    {
+      "category": "Group 44",
+      "n": 15,
+      "median": 6.32,
+      "mean": 66.97,
+      "p90": 150.17
+    },
+    {
+      "category": "Group 59",
+      "n": 13,
+      "median": 42.08,
+      "mean": 134.33,
+      "p90": 344.03
+    },
+    {
+      "category": "Group 78",
+      "n": 11,
+      "median": 62.82,
+      "mean": 368.22,
+      "p90": 283.67
+    },
+    {
+      "category": "Group 26",
+      "n": 10,
+      "median": 111.43,
+      "mean": 349.74,
+      "p90": 848.12
+    },
+    {
+      "category": "Group 62",
+      "n": 10,
+      "median": 79.64,
+      "mean": 201.36,
+      "p90": 611.21
+    },
+    {
+      "category": "Group 45",
+      "n": 9,
+      "median": 24.72,
+      "mean": 131.21,
+      "p90": 360.87
+    },
+    {
+      "category": "Group 80",
+      "n": 8,
+      "median": 195.52,
+      "mean": 216.86,
+      "p90": 466.23
+    },
+    {
+      "category": "Group 77",
+      "n": 8,
+      "median": 80.13,
+      "mean": 99.57,
+      "p90": 222.87
+    },
+    {
+      "category": "Group 61",
+      "n": 8,
+      "median": 241.93,
+      "mean": 379.36,
+      "p90": 767.94
+    },
+    {
+      "category": "Group 17",
+      "n": 6,
+      "median": 446.16,
+      "mean": 1257.86,
+      "p90": 3185.03
+    },
+    {
+      "category": "Group 43",
+      "n": 6,
+      "median": 31.17,
+      "mean": 51.3,
+      "p90": 121.74
+    },
+    {
+      "category": "Group 14",
+      "n": 4,
+      "median": 1664.54,
+      "mean": 1284.89,
+      "p90": 1679.79
+    },
+    {
+      "category": "Group 60",
+      "n": 3,
+      "median": 0.28,
+      "mean": 0.62,
+      "p90": 1.18
+    },
+    {
+      "category": "Group 63",
+      "n": 2,
+      "median": 745.41,
+      "mean": 745.41,
+      "p90": 1012.19
+    },
+    {
+      "category": "Group 13",
+      "n": 1,
+      "median": 15.1,
+      "mean": 15.1,
+      "p90": 15.1
+    },
+    {
+      "category": "Group 36",
+      "n": 1,
+      "median": 0.13,
+      "mean": 0.13,
+      "p90": 0.13
+    },
+    {
+      "category": "Group 41",
+      "n": 1,
+      "median": 53.43,
+      "mean": 53.43,
+      "p90": 53.43
+    },
+    {
+      "category": "Group 2",
+      "n": 1,
+      "median": 4.33,
+      "mean": 4.33,
+      "p90": 4.33
+    },
+    {
+      "category": "Group 32",
+      "n": 1,
+      "median": 122.18,
+      "mean": 122.18,
+      "p90": 122.18
+    }
+  ],
+  "weekday": [
+    {
+      "category": "0",
+      "n": 5942,
+      "median": 16.9,
+      "mean": 152.21,
+      "p90": 355.72
+    },
+    {
+      "category": "1",
+      "n": 4948,
+      "median": 17.73,
+      "mean": 158.71,
+      "p90": 358.03
+    },
+    {
+      "category": "2",
+      "n": 4880,
+      "median": 18.33,
+      "mean": 194.58,
+      "p90": 458.9
+    },
+    {
+      "category": "3",
+      "n": 4105,
+      "median": 14.88,
+      "mean": 179.2,
+      "p90": 388.07
+    },
+    {
+      "category": "4",
+      "n": 3829,
+      "median": 8.77,
+      "mean": 186.23,
+      "p90": 407.52
+    },
+    {
+      "category": "5",
+      "n": 638,
+      "median": 1.83,
+      "mean": 69.06,
+      "p90": 212.46
+    },
+    {
+      "category": "6",
+      "n": 563,
+      "median": 1.45,
+      "mean": 60.6,
+      "p90": 199.24
+    }
+  ],
+  "hour": [
+    {
+      "category": "0",
+      "n": 269,
+      "median": 0.78,
+      "mean": 48.1,
+      "p90": 178.65
+    },
+    {
+      "category": "1",
+      "n": 220,
+      "median": 6.92,
+      "mean": 90.27,
+      "p90": 324.04
+    },
+    {
+      "category": "10",
+      "n": 2892,
+      "median": 10.77,
+      "mean": 185.29,
+      "p90": 430.66
+    },
+    {
+      "category": "11",
+      "n": 2465,
+      "median": 23.2,
+      "mean": 206.83,
+      "p90": 482.64
+    },
+    {
+      "category": "12",
+      "n": 1342,
+      "median": 10.62,
+      "mean": 167.85,
+      "p90": 361.74
+    },
+    {
+      "category": "13",
+      "n": 1645,
+      "median": 21.38,
+      "mean": 170.87,
+      "p90": 380.79
+    },
+    {
+      "category": "14",
+      "n": 2255,
+      "median": 24.85,
+      "mean": 220.22,
+      "p90": 498.19
+    },
+    {
+      "category": "15",
+      "n": 2131,
+      "median": 23.87,
+      "mean": 208.51,
+      "p90": 404.32
+    },
+    {
+      "category": "16",
+      "n": 1867,
+      "median": 23.02,
+      "mean": 196.57,
+      "p90": 428.79
+    },
+    {
+      "category": "17",
+      "n": 1075,
+      "median": 41.5,
+      "mean": 199.9,
+      "p90": 403.66
+    },
+    {
+      "category": "18",
+      "n": 464,
+      "median": 16.09,
+      "mean": 133.27,
+      "p90": 355.15
+    },
+    {
+      "category": "19",
+      "n": 296,
+      "median": 14.27,
+      "mean": 92.51,
+      "p90": 270.12
+    },
+    {
+      "category": "2",
+      "n": 149,
+      "median": 2.87,
+      "mean": 58.31,
+      "p90": 160.4
+    },
+    {
+      "category": "20",
+      "n": 226,
+      "median": 12.97,
+      "mean": 116.96,
+      "p90": 277.62
+    },
+    {
+      "category": "21",
+      "n": 359,
+      "median": 0.05,
+      "mean": 61.13,
+      "p90": 128.2
+    },
+    {
+      "category": "22",
+      "n": 245,
+      "median": 0.4,
+      "mean": 86.02,
+      "p90": 229.62
+    },
+    {
+      "category": "23",
+      "n": 172,
+      "median": 14.21,
+      "mean": 80.21,
+      "p90": 231.44
+    },
+    {
+      "category": "3",
+      "n": 123,
+      "median": 2.5,
+      "mean": 77.16,
+      "p90": 180.12
+    },
+    {
+      "category": "4",
+      "n": 128,
+      "median": 0.61,
+      "mean": 67.67,
+      "p90": 228.94
+    },
+    {
+      "category": "5",
+      "n": 132,
+      "median": 4.39,
+      "mean": 179.68,
+      "p90": 318.6
+    },
+    {
+      "category": "6",
+      "n": 319,
+      "median": 0.87,
+      "mean": 47.16,
+      "p90": 179.04
+    },
+    {
+      "category": "7",
+      "n": 572,
+      "median": 3.11,
+      "mean": 103.16,
+      "p90": 267.79
+    },
+    {
+      "category": "8",
+      "n": 2546,
+      "median": 4.27,
+      "mean": 121.62,
+      "p90": 272.59
+    },
+    {
+      "category": "9",
+      "n": 3013,
+      "median": 6.22,
+      "mean": 149.92,
+      "p90": 342.76
+    }
+  ],
+  "month": [
+    {
+      "category": "2016-02",
+      "n": 207,
+      "median": 53.45,
+      "mean": 316.8,
+      "p90": 666.87
+    },
+    {
+      "category": "2016-03",
+      "n": 8993,
+      "median": 49.35,
+      "mean": 220.19,
+      "p90": 472.97
+    },
+    {
+      "category": "2016-04",
+      "n": 7933,
+      "median": 2.7,
+      "mean": 137.8,
+      "p90": 288.63
+    },
+    {
+      "category": "2016-05",
+      "n": 7508,
+      "median": 2.02,
+      "mean": 127.63,
+      "p90": 291.15
+    },
+    {
+      "category": "2016-06",
+      "n": 5,
+      "median": 26.65,
+      "mean": 1086.04,
+      "p90": 3224.92
+    },
+    {
+      "category": "2016-07",
+      "n": 14,
+      "median": 34.79,
+      "mean": 279.47,
+      "p90": 683.35
+    },
+    {
+      "category": "2016-08",
+      "n": 15,
+      "median": 145.18,
+      "mean": 519.87,
+      "p90": 1568.27
+    },
+    {
+      "category": "2016-09",
+      "n": 12,
+      "median": 64.45,
+      "mean": 433.44,
+      "p90": 702.46
+    },
+    {
+      "category": "2016-10",
+      "n": 16,
+      "median": 110.97,
+      "mean": 652.38,
+      "p90": 2302.73
+    },
+    {
+      "category": "2016-11",
+      "n": 26,
+      "median": 1.14,
+      "mean": 326.33,
+      "p90": 1178.54
+    },
+    {
+      "category": "2016-12",
+      "n": 37,
+      "median": 43.92,
+      "mean": 219.52,
+      "p90": 678.74
+    },
+    {
+      "category": "2017-01",
+      "n": 94,
+      "median": 57.1,
+      "mean": 197.94,
+      "p90": 649.44
+    },
+    {
+      "category": "2017-02",
+      "n": 45,
+      "median": 2.87,
+      "mean": 20.76,
+      "p90": 44.82
+    }
+  ]
+}

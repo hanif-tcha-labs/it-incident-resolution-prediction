@@ -1,0 +1,12 @@
+# Dependencies required to serve the API and web application
+fastapi==0.115.14
+uvicorn[standard]==0.34.3
+pydantic==2.11.7
+jinja2==3.1.6
+
+# Model inference
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+joblib==1.5.2

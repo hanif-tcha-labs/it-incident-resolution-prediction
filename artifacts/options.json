@@ -1,0 +1,6719 @@
+{
+  "priority": [
+    {
+      "value": "3 - Moderate",
+      "count": 18913,
+      "is_frequent": true
+    },
+    {
+      "value": "4 - Low",
+      "count": 611,
+      "is_frequent": true
+    },
+    {
+      "value": "2 - High",
+      "count": 250,
+      "is_frequent": true
+    },
+    {
+      "value": "1 - Critical",
+      "count": 150,
+      "is_frequent": true
+    },
+    {
+      "value": "Unknown / not provided",
+      "is_missing_marker": true,
+      "count": 0,
+      "is_frequent": true
+    }
+  ],
+  "impact": [
+    {
+      "value": "2 - Medium",
+      "count": 19100,
+      "is_frequent": true
+    },
+    {
+      "value": "3 - Low",
+      "count": 599,
+      "is_frequent": true
+    },
+    {
+      "value": "1 - High",
+      "count": 225,
+      "is_frequent": true
+    },
+    {
+      "value": "Unknown / not provided",
+      "is_missing_marker": true,
+      "count": 0,
+      "is_frequent": true
+    }
+  ],
+  "urgency": [
+    {
+      "value": "2 - Medium",
+      "count": 19042,
+      "is_frequent": true
+    },
+    {
+      "value": "3 - Low",
+      "count": 557,
+      "is_frequent": true
+    },
+    {
+      "value": "1 - High",
+      "count": 325,
+      "is_frequent": true
+    },
+    {
+      "value": "Unknown / not provided",
+      "is_missing_marker": true,
+      "count": 0,
+      "is_frequent": true
+    }
+  ],
+  "category": [
+    {
+      "value": "Category 42",
+      "count": 2719,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 26",
+      "count": 2625,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 53",
+      "count": 2241,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 46",
+      "count": 1755,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 32",
+      "count": 1201,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 9",
+      "count": 888,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 37",
+      "count": 878,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 20",
+      "count": 864,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 23",
+      "count": 851,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 61",
+      "count": 668,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 40",
+      "count": 637,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 57",
+      "count": 634,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 45",
+      "count": 568,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 24",
+      "count": 523,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 51",
+      "count": 516,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 35",
+      "count": 436,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 34",
+      "count": 418,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 28",
+      "count": 405,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 44",
+      "count": 277,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 19",
+      "count": 168,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 43",
+      "count": 133,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 13",
+      "count": 111,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 55",
+      "count": 99,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 17",
+      "count": 58,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 8",
+      "count": 42,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 22",
+      "count": 42,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 41",
+      "count": 36,
+      "is_frequent": true
+    },
+    {
+      "value": "Category 38",
+      "count": 29,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 7",
+      "count": 25,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 63",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 47",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 31",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 30",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 62",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 56",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 54",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 29",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 25",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 4",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 49",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 15",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 3",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Category 27",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Unknown / not provided",
+      "is_missing_marker": true,
+      "count": 26,
+      "is_frequent": true
+    }
+  ],
+  "subcategory": [
+    {
+      "value": "Subcategory 174",
+      "count": 5510,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 223",
+      "count": 2827,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 175",
+      "count": 1517,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 164",
+      "count": 953,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 9",
+      "count": 696,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 275",
+      "count": 470,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 135",
+      "count": 463,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 43",
+      "count": 398,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 28",
+      "count": 356,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 36",
+      "count": 349,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 170",
+      "count": 335,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 125",
+      "count": 294,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 103",
+      "count": 250,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 3",
+      "count": 235,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 303",
+      "count": 225,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 150",
+      "count": 192,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 75",
+      "count": 179,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 123",
+      "count": 179,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 114",
+      "count": 164,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 200",
+      "count": 143,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 31",
+      "count": 134,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 29",
+      "count": 129,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 44",
+      "count": 122,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 154",
+      "count": 117,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 220",
+      "count": 115,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 16",
+      "count": 106,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 300",
+      "count": 104,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 168",
+      "count": 89,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 202",
+      "count": 88,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 231",
+      "count": 83,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 94",
+      "count": 81,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 163",
+      "count": 80,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 251",
+      "count": 78,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 185",
+      "count": 77,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 80",
+      "count": 72,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 117",
+      "count": 72,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 134",
+      "count": 72,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 88",
+      "count": 67,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 82",
+      "count": 67,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 302",
+      "count": 63,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 107",
+      "count": 60,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 224",
+      "count": 59,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 229",
+      "count": 58,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 54",
+      "count": 57,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 130",
+      "count": 54,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 60",
+      "count": 54,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 112",
+      "count": 53,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 271",
+      "count": 52,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 270",
+      "count": 51,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 127",
+      "count": 47,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 69",
+      "count": 45,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 247",
+      "count": 45,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 289",
+      "count": 44,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 215",
+      "count": 42,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 191",
+      "count": 42,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 285",
+      "count": 41,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 105",
+      "count": 40,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 248",
+      "count": 38,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 110",
+      "count": 38,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 255",
+      "count": 38,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 183",
+      "count": 36,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 106",
+      "count": 34,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 184",
+      "count": 34,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 249",
+      "count": 33,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 153",
+      "count": 33,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 151",
+      "count": 32,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 301",
+      "count": 30,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 145",
+      "count": 30,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 305",
+      "count": 30,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 64",
+      "count": 30,
+      "is_frequent": true
+    },
+    {
+      "value": "Subcategory 59",
+      "count": 29,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 277",
+      "count": 28,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 86",
+      "count": 28,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 146",
+      "count": 28,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 228",
+      "count": 27,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 6",
+      "count": 26,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 132",
+      "count": 26,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 243",
+      "count": 25,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 13",
+      "count": 24,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 242",
+      "count": 24,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 90",
+      "count": 24,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 72",
+      "count": 23,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 208",
+      "count": 22,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 178",
+      "count": 22,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 250",
+      "count": 22,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 281",
+      "count": 21,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 20",
+      "count": 20,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 189",
+      "count": 19,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 47",
+      "count": 18,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 159",
+      "count": 18,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 25",
+      "count": 16,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 89",
+      "count": 15,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 252",
+      "count": 15,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 177",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 4",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 77",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 182",
+      "count": 13,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 257",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 144",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 46",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 113",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 92",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 40",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 194",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 233",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 101",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 225",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 50",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 254",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 258",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 65",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 259",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 120",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 78",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 198",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 156",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 68",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 181",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 294",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 30",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 167",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 246",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 166",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 260",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 219",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 283",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 261",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 17",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 57",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 118",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 23",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 269",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 291",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 42",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 74",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 287",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 197",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 199",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 273",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 209",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 244",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 218",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 245",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 192",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 207",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 162",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 226",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 138",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 83",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 176",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 203",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 102",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 171",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 172",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 11",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 296",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 109",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 56",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 99",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 157",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 18",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 204",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 52",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 169",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 262",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 34",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 205",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 33",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 85",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 279",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 115",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 111",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 292",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 66",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 158",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 299",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 161",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 97",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 274",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 140",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 173",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 179",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 187",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 188",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 142",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 298",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 124",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 149",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 12",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 32",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 67",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 48",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 276",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 116",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 8",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 282",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 10",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 53",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 129",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 235",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 240",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 100",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 122",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 2",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 241",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 256",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 141",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 213",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 62",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 160",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 195",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 216",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 212",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Subcategory 35",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Unknown / not provided",
+      "is_missing_marker": true,
+      "count": 55,
+      "is_frequent": true
+    }
+  ],
+  "u_symptom": [
+    {
+      "value": "Symptom 491",
+      "count": 7583,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 534",
+      "count": 1200,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 116",
+      "count": 412,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 4",
+      "count": 348,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 387",
+      "count": 326,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 506",
+      "count": 295,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 532",
+      "count": 255,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 571",
+      "count": 215,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 494",
+      "count": 191,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 470",
+      "count": 169,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 208",
+      "count": 157,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 296",
+      "count": 147,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 118",
+      "count": 142,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 105",
+      "count": 127,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 120",
+      "count": 108,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 54",
+      "count": 105,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 10",
+      "count": 104,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 102",
+      "count": 103,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 87",
+      "count": 97,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 127",
+      "count": 95,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 458",
+      "count": 89,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 517",
+      "count": 77,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 6",
+      "count": 76,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 592",
+      "count": 75,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 70",
+      "count": 71,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 117",
+      "count": 71,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 295",
+      "count": 70,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 65",
+      "count": 67,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 119",
+      "count": 64,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 471",
+      "count": 57,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 607",
+      "count": 51,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 468",
+      "count": 39,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 9",
+      "count": 38,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 587",
+      "count": 37,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 115",
+      "count": 36,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 134",
+      "count": 35,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 465",
+      "count": 34,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 454",
+      "count": 33,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 114",
+      "count": 33,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 232",
+      "count": 32,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 8",
+      "count": 30,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 420",
+      "count": 30,
+      "is_frequent": true
+    },
+    {
+      "value": "Symptom 462",
+      "count": 29,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 382",
+      "count": 28,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 5",
+      "count": 28,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 580",
+      "count": 27,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 495",
+      "count": 27,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 7",
+      "count": 25,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 463",
+      "count": 25,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 444",
+      "count": 25,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 267",
+      "count": 24,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 455",
+      "count": 24,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 381",
+      "count": 23,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 596",
+      "count": 23,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 474",
+      "count": 23,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 86",
+      "count": 22,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 13",
+      "count": 22,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 371",
+      "count": 21,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 473",
+      "count": 21,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 218",
+      "count": 20,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 311",
+      "count": 20,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 250",
+      "count": 19,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 315",
+      "count": 19,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 273",
+      "count": 19,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 594",
+      "count": 19,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 259",
+      "count": 19,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 211",
+      "count": 19,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 438",
+      "count": 18,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 274",
+      "count": 17,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 301",
+      "count": 17,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 375",
+      "count": 17,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 244",
+      "count": 17,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 486",
+      "count": 16,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 252",
+      "count": 15,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 573",
+      "count": 15,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 509",
+      "count": 15,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 257",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 17",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 66",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 216",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 595",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 589",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 263",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 372",
+      "count": 13,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 113",
+      "count": 13,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 409",
+      "count": 13,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 403",
+      "count": 13,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 605",
+      "count": 13,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 130",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 557",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 56",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 609",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 256",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 286",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 529",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 121",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 280",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 583",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 50",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 513",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 411",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 236",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 33",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 391",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 147",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 333",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 217",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 20",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 514",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 292",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 170",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 239",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 44",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 598",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 287",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 469",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 101",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 423",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 383",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 230",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 521",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 237",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 531",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 245",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 106",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 129",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 22",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 247",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 389",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 135",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 242",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 177",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 466",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 23",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 255",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 158",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 35",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 329",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 143",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 572",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 424",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 253",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 48",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 261",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 449",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 264",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 421",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 183",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 606",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 249",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 406",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 294",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 222",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 487",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 57",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 271",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 241",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 288",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 181",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 434",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 472",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 74",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 530",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 69",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 293",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 601",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 518",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 418",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 284",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 291",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 144",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 141",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 522",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 398",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 429",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 93",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 456",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 431",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 214",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 370",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 361",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 435",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 338",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 519",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 569",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 220",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 358",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 608",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 55",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 568",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 152",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 425",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 544",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 266",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 508",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 499",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 412",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 374",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 401",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 368",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 258",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 279",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 88",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 510",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 512",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 593",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 376",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 467",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 209",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 75",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 235",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 260",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 227",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 92",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 577",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 107",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 404",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 559",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 426",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 79",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 233",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 319",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 439",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 240",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 379",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 507",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 497",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 182",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 312",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 112",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 563",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 99",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 3",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 51",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 533",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 156",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 325",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 384",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 282",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 550",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 246",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 560",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 546",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 270",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 97",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 520",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 556",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 213",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 98",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 511",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 502",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 337",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 187",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 178",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 332",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 285",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 268",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 80",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 197",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 564",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 277",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 366",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 84",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 276",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 2",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 72",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 111",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 450",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 410",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 297",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 47",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 303",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 148",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 440",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 501",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 385",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 212",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 176",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 25",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 457",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 173",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 397",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 553",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 67",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 186",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 45",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 443",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 430",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 581",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 142",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 432",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 464",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 380",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 310",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 459",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 352",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 416",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 602",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 377",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 131",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 493",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 536",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 254",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 11",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 356",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 523",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 331",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 365",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 42",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 150",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 408",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 193",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 185",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 504",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 388",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 574",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 540",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 110",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 566",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 433",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 542",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 328",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 436",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 586",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 96",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 555",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 496",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 548",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 305",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 400",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 164",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 526",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 360",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 552",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 427",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 160",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 304",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 60",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 194",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 505",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 62",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 322",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 71",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 321",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 219",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 584",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 488",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 407",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 348",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 353",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 151",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 234",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 68",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 335",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 205",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 316",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 551",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 53",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 34",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 162",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 498",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 373",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 37",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 330",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 283",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 184",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 585",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 269",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 265",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 207",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 437",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 600",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 515",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 545",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 32",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 198",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 603",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 136",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 390",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 19",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 180",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 89",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 229",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 317",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 172",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 169",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 165",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 30",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 15",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 323",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 402",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 453",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 452",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 251",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 340",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 604",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 441",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 345",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 448",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 171",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 203",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 137",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 188",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 125",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 210",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 175",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 133",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 475",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 109",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 479",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 63",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 77",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 278",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 428",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 597",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 174",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 579",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 485",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 588",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 503",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 195",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 460",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 359",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 223",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 157",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 405",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 516",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 351",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 199",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 59",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 318",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 248",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 226",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 61",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 243",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 419",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 392",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 27",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 417",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 26",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 155",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 582",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 415",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 342",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 308",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 524",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 327",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 314",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 324",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 189",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 224",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 126",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 238",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 350",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 154",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 320",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 538",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 29",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 547",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 159",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 567",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Symptom 167",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Unknown / not provided",
+      "is_missing_marker": true,
+      "count": 4623,
+      "is_frequent": true
+    }
+  ],
+  "assignment_group": [
+    {
+      "value": "Group 70",
+      "count": 10193,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 20",
+      "count": 1078,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 25",
+      "count": 636,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 24",
+      "count": 571,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 64",
+      "count": 553,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 55",
+      "count": 359,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 65",
+      "count": 317,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 39",
+      "count": 315,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 66",
+      "count": 308,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 9",
+      "count": 283,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 28",
+      "count": 250,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 10",
+      "count": 245,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 57",
+      "count": 245,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 5",
+      "count": 241,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 27",
+      "count": 236,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 73",
+      "count": 235,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 76",
+      "count": 231,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 23",
+      "count": 229,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 29",
+      "count": 194,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 22",
+      "count": 173,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 54",
+      "count": 139,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 33",
+      "count": 133,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 58",
+      "count": 122,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 31",
+      "count": 120,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 6",
+      "count": 115,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 30",
+      "count": 113,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 72",
+      "count": 111,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 51",
+      "count": 96,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 69",
+      "count": 94,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 37",
+      "count": 87,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 56",
+      "count": 84,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 46",
+      "count": 81,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 3",
+      "count": 79,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 12",
+      "count": 76,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 48",
+      "count": 60,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 49",
+      "count": 58,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 74",
+      "count": 57,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 75",
+      "count": 55,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 19",
+      "count": 52,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 53",
+      "count": 45,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 34",
+      "count": 39,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 50",
+      "count": 32,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 81",
+      "count": 30,
+      "is_frequent": true
+    },
+    {
+      "value": "Group 82",
+      "count": 28,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 67",
+      "count": 27,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 15",
+      "count": 25,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 47",
+      "count": 23,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 21",
+      "count": 22,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 68",
+      "count": 21,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 35",
+      "count": 13,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 78",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 44",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 26",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 62",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 59",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 45",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 77",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 61",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 43",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 17",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 80",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 14",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 63",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 60",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 36",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 32",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 2",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Group 13",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Unknown / not provided",
+      "is_missing_marker": true,
+      "count": 897,
+      "is_frequent": true
+    }
+  ],
+  "location": [
+    {
+      "value": "Location 204",
+      "count": 4511,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 161",
+      "count": 3037,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 143",
+      "count": 2582,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 108",
+      "count": 1685,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 93",
+      "count": 1621,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 51",
+      "count": 1233,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 188",
+      "count": 500,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 179",
+      "count": 291,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 43",
+      "count": 283,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 125",
+      "count": 215,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 111",
+      "count": 211,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 55",
+      "count": 196,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 46",
+      "count": 167,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 96",
+      "count": 167,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 135",
+      "count": 146,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 54",
+      "count": 125,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 56",
+      "count": 107,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 229",
+      "count": 103,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 136",
+      "count": 99,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 128",
+      "count": 86,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 42",
+      "count": 84,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 15",
+      "count": 83,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 39",
+      "count": 82,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 97",
+      "count": 80,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 44",
+      "count": 74,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 38",
+      "count": 74,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 41",
+      "count": 69,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 199",
+      "count": 63,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 34",
+      "count": 63,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 165",
+      "count": 62,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 91",
+      "count": 62,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 33",
+      "count": 57,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 35",
+      "count": 55,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 37",
+      "count": 54,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 18",
+      "count": 50,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 173",
+      "count": 47,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 47",
+      "count": 46,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 45",
+      "count": 44,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 70",
+      "count": 43,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 82",
+      "count": 43,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 59",
+      "count": 43,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 36",
+      "count": 43,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 245",
+      "count": 43,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 197",
+      "count": 42,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 40",
+      "count": 41,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 209",
+      "count": 39,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 83",
+      "count": 38,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 71",
+      "count": 37,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 224",
+      "count": 36,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 113",
+      "count": 34,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 242",
+      "count": 33,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 69",
+      "count": 32,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 131",
+      "count": 30,
+      "is_frequent": true
+    },
+    {
+      "value": "Location 222",
+      "count": 29,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 210",
+      "count": 27,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 232",
+      "count": 26,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 231",
+      "count": 25,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 85",
+      "count": 25,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 249",
+      "count": 24,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 99",
+      "count": 18,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 247",
+      "count": 18,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 8",
+      "count": 18,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 144",
+      "count": 17,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 124",
+      "count": 16,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 160",
+      "count": 16,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 172",
+      "count": 15,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 14",
+      "count": 15,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 196",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 107",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 241",
+      "count": 13,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 223",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 133",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 110",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 86",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 236",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 21",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 149",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 187",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 162",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 117",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 66",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 174",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 171",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 129",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 205",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 12",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 92",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 208",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 81",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 226",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 190",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 118",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 25",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 28",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 200",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 9",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 153",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 169",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 213",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 180",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 75",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 176",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 206",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 185",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 76",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 177",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 235",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 216",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 220",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 27",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 79",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 5",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 170",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 142",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 233",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 147",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 184",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 64",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 60",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 221",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 195",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 201",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 248",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 240",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 52",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 77",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 23",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 214",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 186",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 120",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 17",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 114",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 20",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 215",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 167",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 140",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 155",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 112",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 2",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 115",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 219",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 237",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 10",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 78",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 138",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 234",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 90",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 148",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 65",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 49",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 157",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 30",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 212",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 141",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 158",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 72",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 68",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 193",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 218",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 134",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 109",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 3",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 182",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 194",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 168",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 211",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 225",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 61",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 243",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 102",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 101",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 87",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 13",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 98",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 244",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 203",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 137",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 183",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 156",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 227",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 122",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 130",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 166",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 95",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 189",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 175",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 228",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 22",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 31",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 121",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 73",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 53",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 239",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Location 29",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Unknown / not provided",
+      "is_missing_marker": true,
+      "count": 51,
+      "is_frequent": true
+    }
+  ],
+  "contact_type": [
+    {
+      "value": "Phone",
+      "count": 19888,
+      "is_frequent": true
+    },
+    {
+      "value": "Email",
+      "count": 36,
+      "is_frequent": true
+    },
+    {
+      "value": "Unknown / not provided",
+      "is_missing_marker": true,
+      "count": 0,
+      "is_frequent": true
+    }
+  ],
+  "opened_by": [
+    {
+      "value": "Opened by  17",
+      "count": 5401,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  24",
+      "count": 1255,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  131",
+      "count": 877,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  108",
+      "count": 834,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  40",
+      "count": 821,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  62",
+      "count": 750,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  55",
+      "count": 683,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  180",
+      "count": 625,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  8",
+      "count": 612,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  386",
+      "count": 565,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  59",
+      "count": 553,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  501",
+      "count": 516,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  397",
+      "count": 486,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  301",
+      "count": 403,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  390",
+      "count": 403,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  305",
+      "count": 382,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  58",
+      "count": 327,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  221",
+      "count": 312,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  500",
+      "count": 297,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  239",
+      "count": 291,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  47",
+      "count": 165,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  20",
+      "count": 163,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  94",
+      "count": 161,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  443",
+      "count": 147,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  463",
+      "count": 135,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  240",
+      "count": 129,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  444",
+      "count": 114,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  402",
+      "count": 106,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  468",
+      "count": 104,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  460",
+      "count": 103,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  433",
+      "count": 85,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  536",
+      "count": 75,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  44",
+      "count": 69,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  168",
+      "count": 56,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  124",
+      "count": 55,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  325",
+      "count": 53,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  70",
+      "count": 53,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  247",
+      "count": 46,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  360",
+      "count": 45,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  381",
+      "count": 41,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  9",
+      "count": 40,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  242",
+      "count": 36,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  174",
+      "count": 33,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  512",
+      "count": 30,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  142",
+      "count": 30,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  267",
+      "count": 30,
+      "is_frequent": true
+    },
+    {
+      "value": "Opened by  472",
+      "count": 26,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  157",
+      "count": 25,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  109",
+      "count": 25,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  423",
+      "count": 24,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  228",
+      "count": 23,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  403",
+      "count": 22,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  191",
+      "count": 20,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  354",
+      "count": 19,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  317",
+      "count": 18,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  79",
+      "count": 18,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  155",
+      "count": 16,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  441",
+      "count": 16,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  10",
+      "count": 15,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  253",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  257",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  12",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  503",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  385",
+      "count": 13,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  91",
+      "count": 13,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  319",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  467",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  461",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  321",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  520",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  193",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  464",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  412",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  120",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  517",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  172",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  32",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  430",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  270",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  182",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  256",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  163",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  184",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  369",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  185",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  262",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  198",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  296",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  255",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  188",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  226",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  353",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  39",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  350",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  128",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  322",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  431",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  502",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  237",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  316",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  356",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  533",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  119",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  368",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  364",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  46",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  293",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  147",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  320",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  209",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  382",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  60",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  530",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  2",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  351",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  505",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  298",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  219",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  265",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  453",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  392",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  72",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  337",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  216",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  420",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  469",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  465",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  101",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  122",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  535",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  4",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  528",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  524",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  419",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  80",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  75",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  515",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  68",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  106",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  73",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  246",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  3",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  277",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  111",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  151",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  233",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  486",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  230",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  90",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  346",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  5",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  280",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Opened by  144",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Unknown / not provided",
+      "is_missing_marker": true,
+      "count": 714,
+      "is_frequent": true
+    }
+  ],
+  "sys_created_by": [
+    {
+      "value": "Created by 10",
+      "count": 2662,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 13",
+      "count": 573,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 81",
+      "count": 557,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 20",
+      "count": 490,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 89",
+      "count": 425,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 34",
+      "count": 413,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 62",
+      "count": 409,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 52",
+      "count": 394,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 216",
+      "count": 385,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 33",
+      "count": 373,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 30",
+      "count": 351,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 6",
+      "count": 344,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 167",
+      "count": 297,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 171",
+      "count": 290,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 169",
+      "count": 287,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 130",
+      "count": 217,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 129",
+      "count": 210,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 98",
+      "count": 189,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 217",
+      "count": 158,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 31",
+      "count": 141,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 107",
+      "count": 137,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 108",
+      "count": 120,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 199",
+      "count": 103,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 188",
+      "count": 98,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 12",
+      "count": 91,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 25",
+      "count": 90,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 193",
+      "count": 88,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 192",
+      "count": 75,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 23",
+      "count": 67,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 172",
+      "count": 59,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 76",
+      "count": 53,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 47",
+      "count": 52,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 140",
+      "count": 51,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 233",
+      "count": 49,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 58",
+      "count": 49,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 45",
+      "count": 48,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 190",
+      "count": 44,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 120",
+      "count": 43,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 18",
+      "count": 38,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 158",
+      "count": 36,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 202",
+      "count": 34,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 113",
+      "count": 30,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 221",
+      "count": 30,
+      "is_frequent": true
+    },
+    {
+      "value": "Created by 79",
+      "count": 29,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 71",
+      "count": 27,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 70",
+      "count": 24,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 180",
+      "count": 24,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 51",
+      "count": 23,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 5",
+      "count": 20,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 109",
+      "count": 19,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 87",
+      "count": 19,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 151",
+      "count": 18,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 137",
+      "count": 18,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 182",
+      "count": 16,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 164",
+      "count": 16,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 174",
+      "count": 15,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 207",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 119",
+      "count": 14,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 42",
+      "count": 13,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 7",
+      "count": 13,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 101",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 205",
+      "count": 12,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 114",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 14",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 132",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 166",
+      "count": 11,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 226",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 138",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 88",
+      "count": 10,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 24",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 184",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 59",
+      "count": 9,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 196",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 44",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 225",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 118",
+      "count": 8,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 84",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 176",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 61",
+      "count": 7,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 218",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 148",
+      "count": 6,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 92",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 83",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 21",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 211",
+      "count": 5,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 85",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 67",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 117",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 103",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 124",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 144",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 136",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 185",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 219",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 200",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 228",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 147",
+      "count": 4,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 82",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 41",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 32",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 203",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 170",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 220",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 19",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 230",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 134",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 69",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 133",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 160",
+      "count": 3,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 229",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 86",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 54",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 204",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 162",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 210",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 179",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 115",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 78",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 97",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 142",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 43",
+      "count": 2,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 2",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 178",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 163",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 175",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 227",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 49",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 37",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 1",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 56",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 222",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 39",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 145",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 53",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 125",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 55",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 102",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 209",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 197",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 68",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 155",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 96",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 46",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 159",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 122",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 3",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 99",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Created by 60",
+      "count": 1,
+      "is_frequent": false
+    },
+    {
+      "value": "Unknown / not provided",
+      "is_missing_marker": true,
+      "count": 8607,
+      "is_frequent": true
+    }
+  ],
+  "hour": [
+    {
+      "value": "9",
+      "count": 2441,
+      "is_frequent": true
+    },
+    {
+      "value": "10",
+      "count": 2324,
+      "is_frequent": true
+    },
+    {
+      "value": "11",
+      "count": 1990,
+      "is_frequent": true
+    },
+    {
+      "value": "8",
+      "count": 1949,
+      "is_frequent": true
+    },
+    {
+      "value": "14",
+      "count": 1817,
+      "is_frequent": true
+    },
+    {
+      "value": "15",
+      "count": 1749,
+      "is_frequent": true
+    },
+    {
+      "value": "16",
+      "count": 1544,
+      "is_frequent": true
+    },
+    {
+      "value": "13",
+      "count": 1342,
+      "is_frequent": true
+    },
+    {
+      "value": "12",
+      "count": 1069,
+      "is_frequent": true
+    },
+    {
+      "value": "17",
+      "count": 882,
+      "is_frequent": true
+    },
+    {
+      "value": "7",
+      "count": 476,
+      "is_frequent": true
+    },
+    {
+      "value": "18",
+      "count": 376,
+      "is_frequent": true
+    },
+    {
+      "value": "21",
+      "count": 276,
+      "is_frequent": true
+    },
+    {
+      "value": "6",
+      "count": 242,
+      "is_frequent": true
+    },
+    {
+      "value": "19",
+      "count": 211,
+      "is_frequent": true
+    },
+    {
+      "value": "0",
+      "count": 205,
+      "is_frequent": true
+    },
+    {
+      "value": "22",
+      "count": 172,
+      "is_frequent": true
+    },
+    {
+      "value": "20",
+      "count": 169,
+      "is_frequent": true
+    },
+    {
+      "value": "1",
+      "count": 168,
+      "is_frequent": true
+    },
+    {
+      "value": "23",
+      "count": 123,
+      "is_frequent": true
+    },
+    {
+      "value": "2",
+      "count": 122,
+      "is_frequent": true
+    },
+    {
+      "value": "3",
+      "count": 100,
+      "is_frequent": true
+    },
+    {
+      "value": "4",
+      "count": 90,
+      "is_frequent": true
+    },
+    {
+      "value": "5",
+      "count": 87,
+      "is_frequent": true
+    }
+  ],
+  "weekday": [
+    {
+      "value": "0",
+      "count": 4738,
+      "is_frequent": true
+    },
+    {
+      "value": "1",
+      "count": 3951,
+      "is_frequent": true
+    },
+    {
+      "value": "2",
+      "count": 3825,
+      "is_frequent": true
+    },
+    {
+      "value": "3",
+      "count": 3357,
+      "is_frequent": true
+    },
+    {
+      "value": "4",
+      "count": 3097,
+      "is_frequent": true
+    },
+    {
+      "value": "5",
+      "count": 509,
+      "is_frequent": true
+    },
+    {
+      "value": "6",
+      "count": 447,
+      "is_frequent": true
+    }
+  ]
+}

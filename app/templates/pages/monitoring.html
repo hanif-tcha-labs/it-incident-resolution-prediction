@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block title %}Monitoring - IT Incident Resolution ML{% endblock %}
+{% block page_title %}Model Monitoring{% endblock %}
+
+{% block content %}
+<div class="banner banner-info">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+  <div>
+    Prediction requests are stored in SQLite. Review request volume, predicted durations, warnings, and category changes here.
+  </div>
+</div>
+
+<!-- Monitoring KPI Cards -->
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-label">Logged Inferences (SQLite)</div>
+    <div class="kpi-value" id="monTotalCount">0</div>
+    <div class="kpi-subtext">Total predictions processed</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Warning / Rare Level Rate</div>
+    <div class="kpi-value" id="monWarningRate">0.0%</div>
+    <div class="kpi-subtext">Requests containing unseen levels</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Median Predicted Duration</div>
+    <div class="kpi-value" style="color: var(--brand-primary);" id="monMedianDuration">-- h</div>
+    <div class="kpi-subtext">Historical test median: 2.6 h</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Category Drift Index</div>
+    <div class="kpi-value" style="color: var(--accent-success);" id="monDriftIndex">Nominal</div>
+    <div class="kpi-subtext">Unseen levels vs test baseline (0.5%)</div>
+  </div>
+</div>
+
+<!-- Charts Grid -->
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+  <!-- Duration distribution chart -->
+  <div class="card" style="margin-bottom: 0;">
+    <div class="card-header">
+      <h3 class="card-title" style="font-size: 0.95rem;">Predicted Duration Breakdown</h3>
+      <span class="badge badge-fast">Prediction Log</span>
+    </div>
+    <div class="card-body" style="height: 250px; position: relative;">
+      <canvas id="durationDonutChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Drift Signal Card -->
+  <div class="card" style="margin-bottom: 0;">
+    <div class="card-header">
+      <h3 class="card-title" style="font-size: 0.95rem;">New Category Monitoring</h3>
+      <span class="badge badge-moderate">Data Quality</span>
+    </div>
+    <div class="card-body">
+      <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+        When support teams introduce new ServiceNow categories, symptoms, or reassign tickets to newly created teams, the model falls back to the infrequent pooled level.
+      </p>
+
+      <div style="background: var(--bg-surface-alt); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); margin-bottom: 1rem;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
+          <span style="font-size: 0.82rem; font-weight: 600;">Unseen Assignment Groups:</span>
+          <span style="font-size: 0.82rem; font-weight: 700;" id="driftGroupRate">0.0%</span>
+        </div>
+        <div style="height: 6px; background: var(--border-color); border-radius: 3px; overflow: hidden;">
+          <div id="driftGroupBar" style="width: 0%; height: 100%; background: var(--accent-success);"></div>
+        </div>
+        <small style="color: var(--text-muted); font-size: 0.72rem;">Baseline expected rate on test set: ~0.5%</small>
+      </div>
+
+      <div style="background: var(--bg-surface-alt); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
+          <span style="font-size: 0.82rem; font-weight: 600;">Unseen Categories:</span>
+          <span style="font-size: 0.82rem; font-weight: 700;" id="driftCatRate">0.0%</span>
+        </div>
+        <div style="height: 6px; background: var(--border-color); border-radius: 3px; overflow: hidden;">
+          <div id="driftCatBar" style="width: 0%; height: 100%; background: var(--accent-success);"></div>
+        </div>
+        <small style="color: var(--text-muted); font-size: 0.72rem;">Baseline expected rate on test set: ~0.2%</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Recent Predictions Audit Table -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Recent Inferences Audit Log</h3>
+      <p class="card-description">Persisted SQLite entries with inputs, outputs, and warnings</p>
+    </div>
+    <div style="display: flex; gap: 0.5rem;">
+      <input type="text" id="logSearchInput" placeholder="Filter by group/category..." class="form-control" style="width: 200px; padding: 0.35rem 0.65rem; font-size: 0.8rem;">
+      <button class="btn btn-secondary btn-sm" onclick="exportAuditLogCsv()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Export CSV
+      </button>
+    </div>
+  </div>
+  <div class="card-body" style="padding: 0;">
+    <div class="table-responsive">
+      <table class="data-table" id="auditLogTable">
+        <thead>
+          <tr>
+            <th>Request ID</th>
+            <th>Timestamp</th>
+            <th>Opening Time</th>
+            <th>Group / Category</th>
+            <th>Predicted Duration</th>
+            <th>80% Range</th>
+            <th>Warnings</th>
+          </tr>
+        </thead>
+        <tbody id="auditLogBody">
+          <tr><td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">Loading audit log...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/monitoring.js"></script>
+{% endblock %}

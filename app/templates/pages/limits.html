@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Operational Limits - HTVEX AI{% endblock %}
+{% block page_title %}Operational Limits{% endblock %}
+
+{% block content %}
+<div class="banner banner-warning">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+    <line x1="12" y1="9" x2="12" y2="13"></line>
+    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+  </svg>
+  <div>
+    Use estimates to support triage, not as service-level commitments or measures of staff performance.
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">Known Limitations</h3>
+      <p class="card-description">Evaluation results describe this dataset and its historical processes.</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <ul style="font-size: 0.9rem; padding-left: 1.25rem; line-height: 1.8; color: var(--text-secondary);">
+      <li><strong>Long incidents are difficult to estimate.</strong> Tickets lasting more than 24 hours make up 36% of the test set and account for 91% of its total forecast error. Their average absolute error is 297.3 hours, compared with 8.2 hours for incidents under one hour.</li>
+      <li><strong>Historical process changes affect accuracy.</strong> The dataset's median resolution time fell from about 80 hours to about 2 hours in late March 2016. Results may change when workflows or service policies differ.</li>
+      <li><strong>Some groups are sparsely represented.</strong> Critical-priority tickets are less than 1% of the evaluation set, so their estimates are less certain. Several ticket attributes are anonymized.</li>
+      <li><strong>Predictions reflect association, not causation.</strong> Changing a ticket field or assignment does not guarantee a change in resolution time.</li>
+      <li><strong>The model covers resolved incidents.</strong> The 13 incidents without a resolution target were excluded from training and evaluation.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">Recommended Use</h3>
+  </div>
+  <div class="card-body">
+    <ul style="font-size: 0.9rem; padding-left: 1.25rem; line-height: 1.8; color: var(--text-secondary);">
+      <li>Review the prediction range alongside the point estimate.</li>
+      <li>Use predictions as one input to prioritization; retain human review for complex or critical incidents.</li>
+      <li>Re-evaluate model performance when incident workflows or category distributions change.</li>
+    </ul>
+  </div>
+</div>
+{% endblock %}

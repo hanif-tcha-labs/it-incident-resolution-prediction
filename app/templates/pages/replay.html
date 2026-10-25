@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{% block title %}Live Replay - IT Incident Resolution ML{% endblock %}
+{% block page_title %}Live Simulator{% endblock %}
+
+{% block content %}
+<div class="banner banner-info">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="12" cy="12" r="10"></circle>
+    <polyline points="12 6 12 12 16 14"></polyline>
+  </svg>
+  <div>
+    Replays 4,981 test incidents in chronological order. Resolution times remain hidden until each incident is resolved
+    on the simulated timeline. Playback progress is saved and resumes when you return from another page.
+  </div>
+</div>
+
+<!-- Clock and Simulation Control Bar -->
+<div class="clock-display">
+  <div>
+    <div style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">
+      Simulated Timeline
+    </div>
+    <div class="clock-time" id="simClockDisplay">2016-05-10 22:41:00</div>
+  </div>
+
+  <div class="clock-controls">
+    <button class="btn btn-primary btn-sm" id="btnPlayPause" onclick="togglePlayPause()">
+      <svg id="playPauseIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+      </svg>
+      <span id="playPauseLabel">Start Stream</span>
+    </button>
+    <button class="btn btn-secondary btn-sm" onclick="stepClockHours(1)">+1 Hour</button>
+    <button class="btn btn-secondary btn-sm" onclick="jumpToNextEvent()">Jump to Next</button>
+    <button class="btn btn-secondary btn-sm" onclick="resetReplay()">Reset</button>
+
+    <div
+      style="display: flex; align-items: center; gap: 0.25rem; margin-left: 0.5rem; background: var(--bg-surface); padding: 0.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+      <span style="font-size: 0.75rem; color: var(--text-muted); padding: 0 0.35rem;">Speed:</span>
+      <button class="btn btn-sm" id="spd1" onclick="setSpeed(60)"
+        style="padding: 0.2rem 0.5rem; font-size: 0.75rem;">1m/s</button>
+      <button class="btn btn-sm btn-primary" id="spd2" onclick="setSpeed(3600)"
+        style="padding: 0.2rem 0.5rem; font-size: 0.75rem;">1h/s</button>
+      <button class="btn btn-sm" id="spd3" onclick="setSpeed(86400)"
+        style="padding: 0.2rem 0.5rem; font-size: 0.75rem;">1d/s</button>
+    </div>
+  </div>
+</div>
+
+<div id="simError" class="banner banner-warning" role="alert" style="display: none;"></div>
+
+<!-- Live KPIs -->
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-label">Active / Open Tickets</div>
+    <div class="kpi-value" style="color: var(--accent-warning);" id="kpiActiveCount">0</div>
+    <div class="kpi-subtext">Waiting for real resolution</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Resolved Tickets</div>
+    <div class="kpi-value" style="color: var(--accent-success);" id="kpiResolvedCount">0</div>
+    <div class="kpi-subtext">Ground truth revealed</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Current Model MAE</div>
+    <div class="kpi-value" style="color: var(--brand-primary);" id="kpiCurrentModelMae">-- h</div>
+    <div class="kpi-subtext">Calculated only on resolved tickets</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Current Baseline MAE</div>
+    <div class="kpi-value" id="kpiCurrentBaseMae">-- h</div>
+    <div class="kpi-subtext" id="kpiMaeDelta">Baseline: 132.5 h</div>
+  </div>
+</div>
+
+<!-- Real-Time Charts Grid -->
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+  <!-- Cumulative MAE Progression Line -->
+  <div class="card" style="margin-bottom: 0;">
+    <div class="card-header">
+      <h3 class="card-title" style="font-size: 0.95rem;">Live Cumulative MAE Evolution</h3>
+      <span class="badge badge-fast">Stream Progress</span>
+    </div>
+    <div class="card-body" style="height: 240px; position: relative;">
+      <canvas id="liveMaeChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Actual vs Predicted Scatter -->
+  <div class="card" style="margin-bottom: 0;">
+    <div class="card-header">
+      <h3 class="card-title" style="font-size: 0.95rem;">Actual vs Predicted (Resolved Tickets)</h3>
+      <span class="badge badge-moderate" id="scatterCountBadge">0 points</span>
+    </div>
+    <div class="card-body" style="height: 240px; position: relative;">
+      <canvas id="liveScatterChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- Stream Feeds Grid -->
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+  <!-- Incoming / Active Incidents -->
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <h3 class="card-title" style="font-size: 0.95rem;">Active Tickets in Progress</h3>
+        <p class="card-description">Target is hidden; prediction was requested at opening</p>
+      </div>
+      <span class="badge badge-slow" id="activeBadgeCount">0 Open</span>
+    </div>
+    <div class="card-body" style="padding: 0;">
+      <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+        <table class="data-table" id="activeTable">
+          <thead>
+            <tr>
+              <th>Incident</th>
+              <th>Opened At</th>
+              <th>Group</th>
+              <th>Predicted Duration</th>
+              <th>80% Range</th>
+            </tr>
+          </thead>
+          <tbody id="activeTableBody">
+            <tr>
+              <td colspan="5" style="text-align: center; color: var(--text-muted); padding: 2rem;">No active tickets
+                opened yet. Start the stream.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resolved Incidents Feed -->
+  <div class="card">
+    <div class="card-header">
+      <div>
+        <h3 class="card-title" style="font-size: 0.95rem;">Resolved Tickets (Ground Truth Revealed)</h3>
+        <p class="card-description">Actual duration known; error computed</p>
+      </div>
+      <span class="badge badge-fast" id="resolvedBadgeCount">0 Resolved</span>
+    </div>
+    <div class="card-body" style="padding: 0;">
+      <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+        <table class="data-table" id="resolvedTable">
+          <thead>
+            <tr>
+              <th>Incident</th>
+              <th>Predicted</th>
+              <th>Actual Duration</th>
+              <th>Error</th>
+              <th>Outcome</th>
+            </tr>
+          </thead>
+          <tbody id="resolvedTableBody">
+            <tr>
+              <td colspan="5" style="text-align: center; color: var(--text-muted); padding: 2rem;">No tickets resolved
+                yet in simulated time.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/replay.js"></script>
+{% endblock %}

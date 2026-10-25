@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% block title %}Models - IT Incident Resolution ML{% endblock %}
+{% block page_title %}Model Exploration, Tuning & Sensitivity Analysis{% endblock %}
+
+{% block content %}
+<div class="banner banner-info">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+  <div>
+    <strong>Validation Results:</strong> On 4,981 validation incidents, the <code>log1p(hours)</code> target reduced MAE by nearly 50 hours across the compared model families.
+  </div>
+</div>
+
+<!-- Comparison Tables -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">1. Default Models on Validation Set (Raw Target)</h3>
+      <p class="card-description">Baseline and standard regressors trained directly on target in raw hours</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="data-table" id="defaultModelsTable">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Validation MAE (h)</th>
+            <th>Validation RMSE (h)</th>
+            <th>Validation RMSLE</th>
+            <th>Train MAE (h)</th>
+            <th>Fit Time (s)</th>
+          </tr>
+        </thead>
+        <tbody id="defaultModelsBody">
+          <tr><td colspan="6">Loading default models...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">2. Tuned Models on Validation Set (Log1p Target)</h3>
+      <p class="card-description">Best hyperparameter configurations after random search on log1p(hours)</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="data-table" id="tunedModelsTable">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Validation MAE (h)</th>
+            <th>Validation RMSE (h)</th>
+            <th>Validation RMSLE</th>
+            <th>Mean Error (h)</th>
+            <th>Fit Time (s)</th>
+          </tr>
+        </thead>
+        <tbody id="tunedModelsBody">
+          <tr><td colspan="6">Loading tuned models...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-interpretation">
+      <strong>Model Selection:</strong> <code>HistGradientBoostingRegressor</code> achieved the lowest validation MAE (<strong>106.22 h</strong>) while fitting in 19.08 seconds (twice as fast as Random Forest at 37.10 seconds). Selected hyperparameters: <code>learning_rate=0.03</code>, <code>max_iter=400</code>, <code>max_leaf_nodes=31</code>, <code>loss='squared_error'</code>.
+    </div>
+  </div>
+</div>
+
+<!-- Sensitivity Analysis -->
+<div class="card">
+  <div class="card-header">
+    <div>
+      <h3 class="card-title">3. Sensitivity & Robustness Checks</h3>
+      <p class="card-description">Verifying whether modeling choices disproportionately affected performance</p>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Experimental Variant</th>
+            <th>Train Incidents</th>
+            <th>Validation MAE (h)</th>
+            <th>Validation RMSE (h)</th>
+            <th>Validation RMSLE</th>
+            <th>Mean Error (h)</th>
+          </tr>
+        </thead>
+        <tbody id="sensitivityBody">
+          <tr><td colspan="6">Loading sensitivity checks...</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-interpretation">
+      <strong>Sensitivity & Stability Findings:</strong>
+      <ul style="padding-left: 1.2rem; margin-top: 0.35rem; line-height: 1.5;">
+        <li>Restricting training only to post-March data slightly degraded validation MAE (108.3 h vs 106.2 h), demonstrating that historical group priors remain informative.</li>
+        <li>Excluding <code>sys_created_by</code> shifts MAE by only ~0.6 h, showing the model is not over-reliant on a single indicator.</li>
+        <li>Omitting retroactively logged resolved tickets has near-zero impact on validation MAE (106.3 h vs 106.2 h).</li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("/api/v1/models/comparison")
+    .then(r => r.json())
+    .then(data => {
+      // 1. Default Models Table
+      const defs = data.default_models_validation || [];
+      document.getElementById("defaultModelsBody").innerHTML = defs.map(m => `
+        <tr>
+          <td><strong>${m.model || m['Unnamed: 0']}</strong></td>
+          <td><span class="badge ${m.MAE < 130 ? 'badge-fast' : 'badge-slow'}">${m.MAE} h</span></td>
+          <td>${m.RMSE} h</td>
+          <td>${m.RMSLE}</td>
+          <td>${m['MAE train']} h</td>
+          <td>${m['fit seconds']} s</td>
+        </tr>
+      `).join("");
+
+      // 2. Tuned Models Table
+      const tuned = data.tuned_models_validation || [];
+      document.getElementById("tunedModelsBody").innerHTML = tuned.map(m => `
+        <tr>
+          <td><strong>${m.model || m['Unnamed: 0']}</strong></td>
+          <td><span class="badge ${m.MAE < 107 ? 'badge-fast' : 'badge-moderate'}">${m.MAE} h</span></td>
+          <td>${m.RMSE} h</td>
+          <td>${m.RMSLE}</td>
+          <td>${m['mean error']} h</td>
+          <td>${m['fit seconds'] || '-'} s</td>
+        </tr>
+      `).join("");
+
+      // 3. Sensitivity Checks
+      const sens = data.sensitivity_checks || [];
+      document.getElementById("sensitivityBody").innerHTML = sens.map(s => `
+        <tr>
+          <td><strong>${s.variant}</strong></td>
+          <td>${s['n train'] ? s['n train'].toLocaleString() : '-'}</td>
+          <td><span class="badge badge-fast">${s.MAE} h</span></td>
+          <td>${s.RMSE} h</td>
+          <td>${s.RMSLE}</td>
+          <td>${s['mean error']} h</td>
+        </tr>
+      `).join("");
+    });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,362 @@
+[
+  {
+    "column": "number",
+    "group": "identifier",
+    "meaning": "Incident identifier (INCxxxxxxx). Repeated on every event of the incident.",
+    "availability": "known at opening",
+    "reason": "Identifier of the incident.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Key to group events, never a feature."
+  },
+  {
+    "column": "incident_state",
+    "group": "state",
+    "meaning": "State of the incident at this event (New, Active, Resolved, Closed, Awaiting ...).",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Changes at every event, it follows the progress of the incident.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (leakage). The initial state may be studied later."
+  },
+  {
+    "column": "active",
+    "group": "state",
+    "meaning": "Flag: the record is still active (False once the incident is closed).",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Turns False when the incident is closed.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (leakage)."
+  },
+  {
+    "column": "reassignment_count",
+    "group": "counter",
+    "meaning": "Number of times the incident was reassigned so far.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Counter that grows while the incident is handled.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (leakage)."
+  },
+  {
+    "column": "reopen_count",
+    "group": "counter",
+    "meaning": "Number of times the incident was reopened so far.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Counter that grows after a resolution.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (leakage)."
+  },
+  {
+    "column": "sys_mod_count",
+    "group": "counter",
+    "meaning": "Number of times the record was updated so far.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Counter of updates, it grows during the life of the incident.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (leakage). Only used to check the event order."
+  },
+  {
+    "column": "made_sla",
+    "group": "indicator",
+    "meaning": "Flag: the SLA target was met.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "SLA result, linked to how long the incident took.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (result of the process)."
+  },
+  {
+    "column": "caller_id",
+    "group": "people/groups",
+    "meaning": "Person who reported the incident (anonymised).",
+    "availability": "known at opening",
+    "reason": "The caller exists when the incident is opened.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Candidate. Very high cardinality."
+  },
+  {
+    "column": "opened_by",
+    "group": "people/groups",
+    "meaning": "Person who opened the incident (anonymised).",
+    "availability": "known at opening",
+    "reason": "The person who opens the incident is known at opening.",
+    "used_as_feature": true,
+    "is_target": false,
+    "planned_use": "Candidate. High cardinality."
+  },
+  {
+    "column": "opened_at",
+    "group": "date",
+    "meaning": "Date and time the incident was opened.",
+    "availability": "known at opening",
+    "reason": "Opening time, start of the target.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Start of the target. Time features (hour, weekday)."
+  },
+  {
+    "column": "sys_created_by",
+    "group": "people/groups",
+    "meaning": "User who created the record in the system.",
+    "availability": "maybe known at opening",
+    "reason": "Creation info. Stable, but missing for a large share of incidents.",
+    "used_as_feature": true,
+    "is_target": false,
+    "planned_use": "Candidate after checking the missing pattern."
+  },
+  {
+    "column": "sys_created_at",
+    "group": "date",
+    "meaning": "Date and time the record was created in the system.",
+    "availability": "maybe known at opening",
+    "reason": "Creation info. Stable, but missing for a large share of incidents.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Probably not needed (close to opened_at)."
+  },
+  {
+    "column": "sys_updated_by",
+    "group": "people/groups",
+    "meaning": "User who made this update.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Author of each update, changes along the incident.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (event metadata)."
+  },
+  {
+    "column": "sys_updated_at",
+    "group": "date",
+    "meaning": "Date and time of this update (time of the event).",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Time of each update (event time).",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded. Used to order events."
+  },
+  {
+    "column": "contact_type",
+    "group": "classification",
+    "meaning": "Channel used to report the incident (Phone, Email ...).",
+    "availability": "known at opening",
+    "reason": "Channel used when the incident is reported.",
+    "used_as_feature": true,
+    "is_target": false,
+    "planned_use": "Candidate. Almost constant."
+  },
+  {
+    "column": "location",
+    "group": "classification",
+    "meaning": "Location of the caller (anonymised).",
+    "availability": "maybe known at opening",
+    "reason": "Caller location. Rarely changes but can be corrected later.",
+    "used_as_feature": true,
+    "is_target": false,
+    "planned_use": "Candidate. High cardinality."
+  },
+  {
+    "column": "category",
+    "group": "classification",
+    "meaning": "Category of the incident (anonymised).",
+    "availability": "maybe known at opening",
+    "reason": "Classification, can be corrected during triage.",
+    "used_as_feature": true,
+    "is_target": false,
+    "planned_use": "Candidate. The initial value must be defined."
+  },
+  {
+    "column": "subcategory",
+    "group": "classification",
+    "meaning": "Subcategory of the incident (anonymised).",
+    "availability": "maybe known at opening",
+    "reason": "Classification, can be corrected during triage.",
+    "used_as_feature": true,
+    "is_target": false,
+    "planned_use": "Candidate. The initial value must be defined."
+  },
+  {
+    "column": "u_symptom",
+    "group": "classification",
+    "meaning": "Symptom of the incident (anonymised).",
+    "availability": "maybe known at opening",
+    "reason": "Classification, often empty at first.",
+    "used_as_feature": true,
+    "is_target": false,
+    "planned_use": "Candidate. The initial value must be defined."
+  },
+  {
+    "column": "cmdb_ci",
+    "group": "classification",
+    "meaning": "Configuration item (asset) concerned (anonymised).",
+    "availability": "maybe known at opening",
+    "reason": "Asset concerned. Almost always missing.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Probably dropped (almost always missing)."
+  },
+  {
+    "column": "impact",
+    "group": "classification",
+    "meaning": "Impact of the incident (1 - High, 2 - Medium, 3 - Low).",
+    "availability": "maybe known at opening",
+    "reason": "Set at opening but can be revised.",
+    "used_as_feature": true,
+    "is_target": false,
+    "planned_use": "Candidate. The initial value must be defined."
+  },
+  {
+    "column": "urgency",
+    "group": "classification",
+    "meaning": "Urgency of the incident (1 - High, 2 - Medium, 3 - Low).",
+    "availability": "maybe known at opening",
+    "reason": "Set at opening but can be revised.",
+    "used_as_feature": true,
+    "is_target": false,
+    "planned_use": "Candidate. The initial value must be defined."
+  },
+  {
+    "column": "priority",
+    "group": "classification",
+    "meaning": "Priority, given by impact and urgency.",
+    "availability": "maybe known at opening",
+    "reason": "Given by impact and urgency, can be revised.",
+    "used_as_feature": true,
+    "is_target": false,
+    "planned_use": "Candidate. Redundant with impact and urgency."
+  },
+  {
+    "column": "assignment_group",
+    "group": "people/groups",
+    "meaning": "Group in charge of the incident at this event.",
+    "availability": "maybe known at opening",
+    "reason": "The group at opening may be known, but it changes during the incident.",
+    "used_as_feature": true,
+    "is_target": false,
+    "planned_use": "Candidate (initial group only). High cardinality."
+  },
+  {
+    "column": "assigned_to",
+    "group": "people/groups",
+    "meaning": "Person in charge of the incident at this event.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Filled while the incident is handled (more often empty on first events).",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (leakage). High cardinality."
+  },
+  {
+    "column": "knowledge",
+    "group": "indicator",
+    "meaning": "Flag: a knowledge-base article is used or linked.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Set when a knowledge article is used to solve the incident.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (leakage)."
+  },
+  {
+    "column": "u_priority_confirmation",
+    "group": "indicator",
+    "meaning": "Flag: the priority was confirmed.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Confirmation happens during the handling.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (leakage)."
+  },
+  {
+    "column": "notify",
+    "group": "indicator",
+    "meaning": "Notification setting (Do Not Notify / Send Email).",
+    "availability": "known at opening",
+    "reason": "Notification setting, stable.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Candidate. Check the link with contact_type."
+  },
+  {
+    "column": "problem_id",
+    "group": "link",
+    "meaning": "Linked problem record.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "A problem record is linked later. Almost always missing.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (linked after opening)."
+  },
+  {
+    "column": "rfc",
+    "group": "link",
+    "meaning": "Linked request for change.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "A change request is linked later. Almost always missing.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (linked after opening)."
+  },
+  {
+    "column": "vendor",
+    "group": "link",
+    "meaning": "Vendor involved, if any.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Vendor appears during the handling. Almost always missing.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (linked after opening)."
+  },
+  {
+    "column": "caused_by",
+    "group": "link",
+    "meaning": "Change record that caused the incident, if any.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "The cause is known after analysis. Almost always missing.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (linked after opening)."
+  },
+  {
+    "column": "closed_code",
+    "group": "closure",
+    "meaning": "Closure code.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Closure information.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (leakage)."
+  },
+  {
+    "column": "resolved_by",
+    "group": "closure",
+    "meaning": "Person who resolved the incident.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Closure information.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (leakage)."
+  },
+  {
+    "column": "resolved_at",
+    "group": "date",
+    "meaning": "Date and time the incident was resolved.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Resolution time, end of the target.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "End of the target, never a feature."
+  },
+  {
+    "column": "closed_at",
+    "group": "date",
+    "meaning": "Date and time the incident was closed.",
+    "availability": "known only after opening (leakage risk)",
+    "reason": "Closure time, after the resolution.",
+    "used_as_feature": false,
+    "is_target": false,
+    "planned_use": "Excluded (leakage). Possible second target."
+  }
+]

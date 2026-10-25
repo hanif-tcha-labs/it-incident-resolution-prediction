@@ -1,0 +1,158 @@
+{
+  "n_events": 141712,
+  "n_incidents": 24918,
+  "n_columns": 36,
+  "n_with_target": 24905,
+  "n_without_target": 13,
+  "n_created_resolved": 1819,
+  "pct_created_resolved": 7.3,
+  "n_reopened": 275,
+  "pct_reopened": 1.1,
+  "exact_duplicates": 0,
+  "missing_by_column": {
+    "number": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "incident_state": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "active": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "reassignment_count": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "reopen_count": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "sys_mod_count": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "made_sla": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "caller_id": {
+      "missing_events": 29,
+      "pct_missing": 0.02
+    },
+    "opened_by": {
+      "missing_events": 4835,
+      "pct_missing": 3.41
+    },
+    "opened_at": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "sys_created_by": {
+      "missing_events": 53076,
+      "pct_missing": 37.45
+    },
+    "sys_created_at": {
+      "missing_events": 53076,
+      "pct_missing": 37.45
+    },
+    "sys_updated_by": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "sys_updated_at": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "contact_type": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "location": {
+      "missing_events": 76,
+      "pct_missing": 0.05
+    },
+    "category": {
+      "missing_events": 78,
+      "pct_missing": 0.06
+    },
+    "subcategory": {
+      "missing_events": 111,
+      "pct_missing": 0.08
+    },
+    "u_symptom": {
+      "missing_events": 32964,
+      "pct_missing": 23.26
+    },
+    "cmdb_ci": {
+      "missing_events": 141267,
+      "pct_missing": 99.69
+    },
+    "impact": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "urgency": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "priority": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "assignment_group": {
+      "missing_events": 14213,
+      "pct_missing": 10.03
+    },
+    "assigned_to": {
+      "missing_events": 27496,
+      "pct_missing": 19.4
+    },
+    "knowledge": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "u_priority_confirmation": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "notify": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    },
+    "problem_id": {
+      "missing_events": 139417,
+      "pct_missing": 98.38
+    },
+    "rfc": {
+      "missing_events": 140721,
+      "pct_missing": 99.3
+    },
+    "vendor": {
+      "missing_events": 141468,
+      "pct_missing": 99.83
+    },
+    "caused_by": {
+      "missing_events": 141689,
+      "pct_missing": 99.98
+    },
+    "closed_code": {
+      "missing_events": 714,
+      "pct_missing": 0.5
+    },
+    "resolved_by": {
+      "missing_events": 226,
+      "pct_missing": 0.16
+    },
+    "resolved_at": {
+      "missing_events": 3141,
+      "pct_missing": 2.22
+    },
+    "closed_at": {
+      "missing_events": 0,
+      "pct_missing": 0.0
+    }
+  }
+}

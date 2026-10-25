@@ -1,0 +1,31 @@
+{
+  "baseline": {
+    "MAE": 132.49,
+    "RMSE": 454.66,
+    "RMSLE": 2.44,
+    "mean_error": -109.47
+  },
+  "model": {
+    "MAE": 117.24,
+    "RMSE": 419.16,
+    "RMSLE": 1.74,
+    "mean_error": -89.06
+  },
+  "bootstrap": {
+    "iterations": 1000,
+    "confidence_level": 0.95,
+    "mae_model_ci": [
+      106.21,
+      129.71
+    ],
+    "mae_reduction_ci": [
+      12.79,
+      17.96
+    ]
+  },
+  "error_distribution": {
+    "over_estimated_pct": 64.38,
+    "mean_error": -89.06,
+    "median_error": 0.73
+  }
+}

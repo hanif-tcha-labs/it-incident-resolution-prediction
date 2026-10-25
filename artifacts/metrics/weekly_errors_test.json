@@ -1,0 +1,268 @@
+[
+  {
+    "week": "2016-05-09/2016-05-15",
+    "n": 1089,
+    "MAE_baseline": 138.56,
+    "MAE_model": 117.95,
+    "mean_error": -98.66
+  },
+  {
+    "week": "2016-05-16/2016-05-22",
+    "n": 1779,
+    "MAE_baseline": 116.38,
+    "MAE_model": 104.2,
+    "mean_error": -76.14
+  },
+  {
+    "week": "2016-05-23/2016-05-29",
+    "n": 1177,
+    "MAE_baseline": 128.58,
+    "MAE_model": 114.49,
+    "mean_error": -92.98
+  },
+  {
+    "week": "2016-05-30/2016-06-05",
+    "n": 673,
+    "MAE_baseline": 123.92,
+    "MAE_model": 109.86,
+    "mean_error": -75.49
+  },
+  {
+    "week": "2016-06-06/2016-06-12",
+    "n": 1,
+    "MAE_baseline": 44.34,
+    "MAE_model": 44.67,
+    "mean_error": 44.67
+  },
+  {
+    "week": "2016-06-20/2016-06-26",
+    "n": 3,
+    "MAE_baseline": 1777.16,
+    "MAE_model": 1768.05,
+    "mean_error": -1700.48
+  },
+  {
+    "week": "2016-07-04/2016-07-10",
+    "n": 4,
+    "MAE_baseline": 318.26,
+    "MAE_model": 270.91,
+    "mean_error": -230.08
+  },
+  {
+    "week": "2016-07-11/2016-07-17",
+    "n": 4,
+    "MAE_baseline": 489.3,
+    "MAE_model": 483.65,
+    "mean_error": -432.83
+  },
+  {
+    "week": "2016-07-18/2016-07-24",
+    "n": 4,
+    "MAE_baseline": 115.85,
+    "MAE_model": 82.54,
+    "mean_error": 18.19
+  },
+  {
+    "week": "2016-07-25/2016-07-31",
+    "n": 2,
+    "MAE_baseline": 23.55,
+    "MAE_model": 29.05,
+    "mean_error": 29.05
+  },
+  {
+    "week": "2016-08-01/2016-08-07",
+    "n": 6,
+    "MAE_baseline": 303.41,
+    "MAE_model": 285.17,
+    "mean_error": -227.55
+  },
+  {
+    "week": "2016-08-08/2016-08-14",
+    "n": 4,
+    "MAE_baseline": 410.5,
+    "MAE_model": 406.65,
+    "mean_error": -374.76
+  },
+  {
+    "week": "2016-08-15/2016-08-21",
+    "n": 1,
+    "MAE_baseline": 14.54,
+    "MAE_model": 67.62,
+    "mean_error": 67.62
+  },
+  {
+    "week": "2016-08-22/2016-08-28",
+    "n": 3,
+    "MAE_baseline": 1259.91,
+    "MAE_model": 1171.38,
+    "mean_error": -1171.38
+  },
+  {
+    "week": "2016-08-29/2016-09-04",
+    "n": 1,
+    "MAE_baseline": 334.38,
+    "MAE_model": 271.11,
+    "mean_error": -271.11
+  },
+  {
+    "week": "2016-09-12/2016-09-18",
+    "n": 3,
+    "MAE_baseline": 1206.94,
+    "MAE_model": 1160.73,
+    "mean_error": -1134.01
+  },
+  {
+    "week": "2016-09-19/2016-09-25",
+    "n": 5,
+    "MAE_baseline": 135.62,
+    "MAE_model": 151.15,
+    "mean_error": 51.47
+  },
+  {
+    "week": "2016-09-26/2016-10-02",
+    "n": 4,
+    "MAE_baseline": 200.39,
+    "MAE_model": 166.3,
+    "mean_error": -116.86
+  },
+  {
+    "week": "2016-10-03/2016-10-09",
+    "n": 3,
+    "MAE_baseline": 1518.41,
+    "MAE_model": 1324.36,
+    "mean_error": -1324.36
+  },
+  {
+    "week": "2016-10-10/2016-10-16",
+    "n": 3,
+    "MAE_baseline": 737.58,
+    "MAE_model": 675.05,
+    "mean_error": -663.7
+  },
+  {
+    "week": "2016-10-17/2016-10-23",
+    "n": 5,
+    "MAE_baseline": 46.29,
+    "MAE_model": 133.19,
+    "mean_error": 110.77
+  },
+  {
+    "week": "2016-10-24/2016-10-30",
+    "n": 5,
+    "MAE_baseline": 661.17,
+    "MAE_model": 504.16,
+    "mean_error": -502.42
+  },
+  {
+    "week": "2016-10-31/2016-11-06",
+    "n": 9,
+    "MAE_baseline": 374.88,
+    "MAE_model": 417.73,
+    "mean_error": -217.64
+  },
+  {
+    "week": "2016-11-07/2016-11-13",
+    "n": 6,
+    "MAE_baseline": 497.79,
+    "MAE_model": 448.75,
+    "mean_error": -411.2
+  },
+  {
+    "week": "2016-11-14/2016-11-20",
+    "n": 3,
+    "MAE_baseline": 19.63,
+    "MAE_model": 42.1,
+    "mean_error": 42.1
+  },
+  {
+    "week": "2016-11-21/2016-11-27",
+    "n": 8,
+    "MAE_baseline": 268.72,
+    "MAE_model": 233.48,
+    "mean_error": -195.8
+  },
+  {
+    "week": "2016-11-28/2016-12-04",
+    "n": 2,
+    "MAE_baseline": 29.76,
+    "MAE_model": 144.33,
+    "mean_error": 144.33
+  },
+  {
+    "week": "2016-12-05/2016-12-11",
+    "n": 4,
+    "MAE_baseline": 64.53,
+    "MAE_model": 97.31,
+    "mean_error": -7.08
+  },
+  {
+    "week": "2016-12-12/2016-12-18",
+    "n": 5,
+    "MAE_baseline": 160.89,
+    "MAE_model": 176.75,
+    "mean_error": -0.7
+  },
+  {
+    "week": "2016-12-19/2016-12-25",
+    "n": 18,
+    "MAE_baseline": 324.17,
+    "MAE_model": 269.49,
+    "mean_error": -153.0
+  },
+  {
+    "week": "2016-12-26/2017-01-01",
+    "n": 14,
+    "MAE_baseline": 122.61,
+    "MAE_model": 119.37,
+    "mean_error": -18.98
+  },
+  {
+    "week": "2017-01-02/2017-01-08",
+    "n": 23,
+    "MAE_baseline": 320.92,
+    "MAE_model": 267.27,
+    "mean_error": -141.97
+  },
+  {
+    "week": "2017-01-09/2017-01-15",
+    "n": 24,
+    "MAE_baseline": 163.58,
+    "MAE_model": 107.26,
+    "mean_error": -17.79
+  },
+  {
+    "week": "2017-01-16/2017-01-22",
+    "n": 15,
+    "MAE_baseline": 211.12,
+    "MAE_model": 143.87,
+    "mean_error": -126.86
+  },
+  {
+    "week": "2017-01-23/2017-01-29",
+    "n": 18,
+    "MAE_baseline": 102.69,
+    "MAE_model": 108.56,
+    "mean_error": -41.18
+  },
+  {
+    "week": "2017-01-30/2017-02-05",
+    "n": 31,
+    "MAE_baseline": 39.72,
+    "MAE_model": 44.2,
+    "mean_error": -12.61
+  },
+  {
+    "week": "2017-02-06/2017-02-12",
+    "n": 18,
+    "MAE_baseline": 17.46,
+    "MAE_model": 36.89,
+    "mean_error": 31.12
+  },
+  {
+    "week": "2017-02-13/2017-02-19",
+    "n": 4,
+    "MAE_baseline": 16.68,
+    "MAE_model": 13.48,
+    "mean_error": 1.14
+  }
+]

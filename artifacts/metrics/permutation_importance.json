@@ -1,0 +1,74 @@
+{
+  "individual": [
+    {
+      "feature": "assignment_group",
+      "mean": 14.061,
+      "std": 0.225
+    },
+    {
+      "feature": "sys_created_by",
+      "mean": 8.741,
+      "std": 0.841
+    },
+    {
+      "feature": "category",
+      "mean": 3.543,
+      "std": 0.25
+    },
+    {
+      "feature": "subcategory",
+      "mean": 1.696,
+      "std": 0.238
+    },
+    {
+      "feature": "u_symptom",
+      "mean": 0.925,
+      "std": 0.283
+    },
+    {
+      "feature": "opened_by",
+      "mean": 0.448,
+      "std": 0.213
+    },
+    {
+      "feature": "location",
+      "mean": 0.348,
+      "std": 0.275
+    },
+    {
+      "feature": "hour",
+      "mean": 0.141,
+      "std": 0.184
+    },
+    {
+      "feature": "impact",
+      "mean": 0.027,
+      "std": 0.027
+    },
+    {
+      "feature": "weekday",
+      "mean": 0.011,
+      "std": 0.127
+    },
+    {
+      "feature": "priority",
+      "mean": 0.007,
+      "std": 0.007
+    },
+    {
+      "feature": "urgency",
+      "mean": 0.001,
+      "std": 0.003
+    },
+    {
+      "feature": "contact_type",
+      "mean": -0.0,
+      "std": 0.003
+    }
+  ],
+  "grouped": {
+    "priority_impact_urgency": 0.04,
+    "hour_weekday": 0.44
+  },
+  "interpretation": "assignment_group is the strongest predictor, followed by sys_created_by and category. Priority/impact/urgency provide almost zero predictive value once other factors are accounted for."
+}

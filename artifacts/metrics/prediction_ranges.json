@@ -1,0 +1,57 @@
+[
+  {
+    "bin": "<1h",
+    "min_pred_hours": 0.0,
+    "max_pred_hours": 1.0,
+    "n_test_samples": 913,
+    "q10_hours": 0.02,
+    "q50_hours": 0.12,
+    "q90_hours": 0.95,
+    "pct_over_24h": 2.85,
+    "interpretation": "Among test incidents with predicted duration in this range (913 cases), 80% resolved between 0.02 h and 0.95 h."
+  },
+  {
+    "bin": "1-10h",
+    "min_pred_hours": 1.0,
+    "max_pred_hours": 10.0,
+    "n_test_samples": 1354,
+    "q10_hours": 0.05,
+    "q50_hours": 0.32,
+    "q90_hours": 53.97,
+    "pct_over_24h": 12.92,
+    "interpretation": "Among test incidents with predicted duration in this range (1354 cases), 80% resolved between 0.05 h and 53.97 h."
+  },
+  {
+    "bin": "10-50h",
+    "min_pred_hours": 10.0,
+    "max_pred_hours": 50.0,
+    "n_test_samples": 1587,
+    "q10_hours": 0.53,
+    "q50_hours": 24.87,
+    "q90_hours": 312.82,
+    "pct_over_24h": 50.98,
+    "interpretation": "Among test incidents with predicted duration in this range (1587 cases), 80% resolved between 0.53 h and 312.82 h."
+  },
+  {
+    "bin": "50-200h",
+    "min_pred_hours": 50.0,
+    "max_pred_hours": 200.0,
+    "n_test_samples": 981,
+    "q10_hours": 1.22,
+    "q50_hours": 70.75,
+    "q90_hours": 558.47,
+    "pct_over_24h": 67.28,
+    "interpretation": "Among test incidents with predicted duration in this range (981 cases), 80% resolved between 1.22 h and 558.47 h."
+  },
+  {
+    "bin": ">200h",
+    "min_pred_hours": 200.0,
+    "max_pred_hours": null,
+    "n_test_samples": 146,
+    "q10_hours": 6.23,
+    "q50_hours": 442.56,
+    "q90_hours": 2569.68,
+    "pct_over_24h": 85.62,
+    "interpretation": "Among test incidents with predicted duration in this range (146 cases), 80% resolved between 6.23 h and 2569.68 h."
+  }
+]

@@ -1,21 +1,11 @@
-# =========================
-# Data manipulation
-# =========================
-numpy==2.2.6
-pandas==2.3.3
-scipy==1.15.3
+# The full analysis and test environment also includes the application runtime.
+-r requirements-app.txt
 
 # =========================
 # Visualization
 # =========================
 matplotlib==3.10.3
 seaborn==0.13.2
-
-# =========================
-# Machine Learning
-# =========================
-scikit-learn==1.7.2
-joblib==1.5.2
 
 # =========================
 # Jupyter
@@ -29,12 +19,8 @@ ipykernel==6.29.5
 pytest==8.4.2
 
 # =========================
-# Finale Application
+# API tests
 # =========================
-fastapi==0.115.14
-uvicorn[standard]==0.34.3
-pydantic==2.11.7
-jinja2==3.1.6
 httpx==0.28.1
 
 # =========================
