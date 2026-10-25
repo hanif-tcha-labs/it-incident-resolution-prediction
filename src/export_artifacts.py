@@ -33,6 +33,30 @@ def ensure_directories():
         d.mkdir(parents=True, exist_ok=True)
 
 
+def validate_export_inputs():
+    """Fail early with setup guidance when notebook-generated inputs are missing."""
+    required_inputs = [
+        ("source event log", config.RAW_FILE),
+        ("reconstructed incident table (notebook 03)", config.INCIDENT_FILE),
+        ("unresolved incident table (notebook 03)", config.NO_TARGET_FILE),
+        ("validation model comparison (notebook 05)", config.TABLES_DIR / "model_comparison_validation.csv"),
+        ("tuned model comparison (notebook 06)", config.TABLES_DIR / "model_comparison_tuned.csv"),
+    ]
+    missing = [(description, path) for description, path in required_inputs if not path.is_file()]
+    if not missing:
+        return
+
+    missing_files = "\n".join(f"- {description}: {path}" for description, path in missing)
+    raise FileNotFoundError(
+        "Cannot rebuild model artifacts because required input files are missing:\n"
+        f"{missing_files}\n"
+        "The export command does not create these source and notebook outputs. "
+        "Provide data/raw/incident_event_log.csv, then run notebooks 03, 05, and 06 "
+        "in order before retrying. To run the application with the committed model, "
+        "you do not need to run this export command."
+    )
+
+
 def export_raw_and_summary():
     """Verify raw log counts and export data summary and dictionary."""
     print("1/7 Checking raw data and generating summaries...")
@@ -598,6 +622,7 @@ def export_options_and_replay(table, train_val, test):
 def main():
     """Main export routine."""
     print("=== Starting artifact export ===")
+    validate_export_inputs()
     ensure_directories()
     export_raw_and_summary()
 

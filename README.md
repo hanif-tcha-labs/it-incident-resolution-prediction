@@ -139,7 +139,8 @@ python -m uvicorn app.main:app --reload
 
 Open **http://localhost:8000** in your browser.
 
-To rebuild the model and analysis artifacts, first provide the source CSV at `data/raw/incident_event_log.csv`, then run:
+The committed model and artifacts are ready to use; rebuilding them is not required to launch the application. To rebuild them, first install the full development dependencies with `python -m pip install -r requirements.txt` and provide the source CSV at `data/raw/incident_event_log.csv`. Then run notebooks `03_target_and_incident_reconstruction.ipynb`, `05_features_split_models.ipynb`, and `06_tuning_and_selection.ipynb` in that order. These notebooks create the incident tables and comparison files required by the exporter. Finally, run from the project root:
+
 ```powershell
 python -m src.export_artifacts
 ```
